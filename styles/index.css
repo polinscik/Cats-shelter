@@ -1,11 +1,8 @@
-body {
+.text-bg {
+  background-color: rgb(235, 90, 59);
   font-family: "Nunito", sans-serif;
   font-size: 2.5vmin;
   color: #fff;
-}
-
-.text-bg {
-  background-color: rgb(235, 90, 59);
 }
 
 .main-title {
