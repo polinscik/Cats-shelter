@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.header {
+  width: 80vw;
+  box-sizing: border-box;
+  margin: 0 0 0 20%;
+}
+.header__row {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(17, 77, 88);
+}
+.header__number {
+  display: flex;
+  color: white;
+  align-self: center;
+  margin: 2rem 4rem 2rem 2rem;
+}
+.header__buttones {
+  display: flex;
+  padding: 3rem 10rem;
+  margin: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.header .button1 {
+  display: flex;
+  justify-сontent: flex-end;
+  background-color: rgb(235, 90, 59);
+}
+.header .button2 {
+  display: flex;
+  justify-сontent: flex-end;
+  background-color: rgb(248, 217, 63);
+}/*# sourceMappingURL=header.css.map */
