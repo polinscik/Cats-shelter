@@ -1,35 +1,86 @@
-@charset "UTF-8";
 .header {
-  width: 80vw;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5vmin;
+  justify-content: flex-end;
   box-sizing: border-box;
-  margin: 0 0 0 20%;
 }
 .header__row {
   display: flex;
+  flex: 0 1 auto;
+  max-width: 80%;
   flex-direction: row;
   background-color: rgb(17, 77, 88);
+  align-items: center;
+  justify-items: stretch;
+}
+.header__phone {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.header #phonecat {
+  display: flex;
+  max-width: 50%;
+  margin-left: 2rem;
 }
 .header__number {
   display: flex;
   color: white;
   align-self: center;
-  margin: 2rem 4rem 2rem 2rem;
+  margin: 2rem 9rem 2rem 0rem;
 }
 .header__buttones {
   display: flex;
-  padding: 3rem 10rem;
-  margin: 0 1rem;
+  padding: 2rem 7rem;
+  gap: 4rem;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
 }
 .header .button1 {
   display: flex;
-  justify-сontent: flex-end;
+  justify-self: end;
   background-color: rgb(235, 90, 59);
 }
 .header .button2 {
   display: flex;
-  justify-сontent: flex-end;
-  background-color: rgb(248, 217, 63);
+  justify-self: end;
+  background-color: rgb(247, 217, 64);
+}
+
+.banner {
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5vmin;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+.banner__cover {
+  display: flex;
+  max-width: 80%;
+  justify-content: flex-end;
+}
+
+#cover {
+  display: flex;
+  flex: 0 1 auto;
+  max-width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+#nameing {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  align-items: center;
+  max-width: 100%;
+}
+
+#nameing2 {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  align-items: center;
 }/*# sourceMappingURL=header.css.map */
