@@ -1,0 +1,65 @@
+.gallery {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    // background-color: pink;
+
+
+    &__cards_two,
+    &__cards_one,
+    &__cards_three {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+
+        width: 450px;
+        height: 620px;
+        background-color: $white;
+
+        transition: 1s;
+        opacity: 1;
+        transform: scale(0.85, 0.85, 0.85);
+    }
+
+    &__cards_one_photo_cat,
+    &__cards_two_photo_cat,
+    &__cards_three_photo_cat {
+        max-width: 100%;
+        border-radius: 50%;
+        width: 450px;
+        height: 450px;
+
+
+        background-color: blue;
+
+    }
+
+    &__cards_one_text {
+        background-color: $yellow;
+        margin-top: 10px;
+        font-family: "Nunito", sans-serif;
+        height: 200px;
+        color: $white;
+
+    }
+
+    &__cards_two_text {
+        background-color: $red;
+        margin-top: 10px;
+        font-family: "Nunito", sans-serif;
+        height: 200px;
+        color: $white;
+
+
+    }
+
+    &__cards_three_text {
+        background-color: $green;
+        margin-top: 10px;
+        font-family: "Nunito", sans-serif;
+        height: 200px;
+        color: $white;
+    }
+
+}
