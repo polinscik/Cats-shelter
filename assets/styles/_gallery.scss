@@ -1,20 +1,38 @@
 .gallery {
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
+    align-content: center;
     // background-color: pink;
 
+    &__title {
+        align-self: center;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        font-family: "Nunito", sans-serif;
+
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
 
     &__cards_two,
     &__cards_one,
     &__cards_three {
         display: flex;
         flex-direction: column;
-        margin: 10px;
+        margin: 0 10px auto;
 
         width: 450px;
         height: 620px;
+
+        //чтоб уменьшалось
+        // width: 20%;
+        // height: 100%;
         background-color: $white;
 
         transition: 1s;
@@ -30,10 +48,102 @@
         width: 450px;
         height: 450px;
 
+        // width: 100%;
+        // height: 100%;
+    }
 
-        background-color: blue;
+    &__cards_one_photo_cat {
+        background-image: url('/assets/images/cat-gallery-photo1.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__cards_one_photo_cat:hover {
+        background-image: url('/assets/images/gallery_cards_one_icon.png');
+        background-repeat: no-repeat;
+        background-color: $green;
+        background-size: 70%;
+        background-position: center;
+    }
+
+    &__cards_two_photo_cat {
+        background-image: url('/assets/images/cat-gallery-photo2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__cards_two_photo_cat:hover {
+        background-image: url('/assets/images/gallery_cards_two_icon.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $light-green;
+        background-size: 70%;
+    }
+
+    &__cards_three_photo_cat {
+        background-image: url('/assets/images/cat-gallery-photo3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__cards_three_photo_cat:hover {
+        background-image: url('/assets/images/gallery_cards_three_icon.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $grey;
+        background-size: 70%;
+    }
+
+    &__cards_one_icon_text,
+    &__cards_two_icon_text,
+    &__cards_three_icon_text {
+        font-family: "Nunito", sans-serif;
+        font-size: 2rem;
 
     }
+
+    //еще не готово, текст на карточках
+    &__cards_one_icon_text {
+        background-color: $red;
+        color: $white;
+        mix-blend-mode: inherit;
+        display: none;
+    }
+
+    &__cards_one_icon_text:hover {
+        background-color: $red;
+        color: $white;
+        mix-blend-mode: inherit;
+    }
+
+    &__cards_two_icon_text {
+        background-color: $light-green;
+        color: $white;
+        mix-blend-mode: inherit;
+    }
+
+    &__cards_three_icon_text {
+        visibility: hidden;
+    }
+
+    &__cards_three_icon_text {
+        background-color: $blue;
+        color: $white;
+        mix-blend-mode: inherit;
+
+        visibility: visible;
+    }
+
+    /////
 
     &__cards_one_text {
         background-color: $yellow;
@@ -52,8 +162,12 @@
     &__cards_three_text {
         margin-top: 10px;
         font-family: "Nunito", sans-serif;
-        height: 200px;
+        // height: 200px;
+
+        height: 20%;
+        // width: 100%;
         color: $white;
+
     }
 
 }
