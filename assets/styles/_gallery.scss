@@ -37,25 +37,19 @@
 
     &__cards_one_text {
         background-color: $yellow;
-        margin-top: 10px;
-        font-family: "Nunito", sans-serif;
-        height: 200px;
-        color: $white;
-
     }
 
     &__cards_two_text {
         background-color: $red;
-        margin-top: 10px;
-        font-family: "Nunito", sans-serif;
-        height: 200px;
-        color: $white;
-
-
     }
 
     &__cards_three_text {
         background-color: $green;
+    }
+
+    &__cards_one_text,
+    &__cards_two_text,
+    &__cards_three_text {
         margin-top: 10px;
         font-family: "Nunito", sans-serif;
         height: 200px;
