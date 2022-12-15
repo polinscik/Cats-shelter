@@ -1,18 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 .header {
-  display: flex;
+  max-width: 80vw;
   font-family: "Nunito", sans-serif;
   font-size: 2.5vmin;
-  justify-content: flex-end;
-  box-sizing: border-box;
+  margin-left: 25rem;
 }
 .header__row {
   display: flex;
   flex: 0 1 auto;
-  max-width: 80%;
+  max-width: 100%;
   flex-direction: row;
   background-color: rgb(17, 77, 88);
   align-items: center;
-  justify-items: stretch;
+  justify-content: fix-end;
 }
 .header__phone {
   display: flex;
@@ -42,24 +46,36 @@
   display: flex;
   justify-self: end;
   background-color: rgb(235, 90, 59);
+  color: white;
 }
 .header .button2 {
   display: flex;
   justify-self: end;
   background-color: rgb(247, 217, 64);
+  color: white;
 }
 
 .banner {
   display: flex;
+  max-width: 80vw;
   font-family: "Nunito", sans-serif;
-  font-size: 2.5vmin;
+  font-size: 2.5vw;
   justify-content: flex-end;
   box-sizing: border-box;
+  margin-left: 25rem;
 }
 .banner__cover {
   display: flex;
-  max-width: 80%;
+  max-width: 100%;
   justify-content: flex-end;
+}
+.banner__covertext {
+  display: flex;
+  position: absolute;
+  width: 74%;
+  height: 61%;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #cover {
@@ -72,15 +88,24 @@
 
 #nameing {
   display: flex;
+  font-size: 2.5vw;
+  max-width: 100%;
+  font-weight: 700;
+  max-width: 100%;
   position: absolute;
   z-index: 1;
+  color: white;
   align-items: center;
-  max-width: 100%;
+  margin-top: -5rem;
 }
 
 #nameing2 {
   display: flex;
+  font-size: 1vw;
+  font-weight: 600;
+  max-width: 100%;
   position: absolute;
   z-index: 2;
+  color: white;
   align-items: center;
 }/*# sourceMappingURL=header.css.map */
