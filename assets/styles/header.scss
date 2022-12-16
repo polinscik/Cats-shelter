@@ -1,10 +1,10 @@
 @import "../styles/_colors.scss";
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin: 0 auto;
 }
 .header {
-  max-width: 80vw;
+  width: 80vw;
   font-family: "Nunito", sans-serif;
   font-size: 2.5vmin;
   margin-left: 25rem;
@@ -12,7 +12,7 @@
   &__row {
     display: flex;
     flex: 0 1 auto;
-    max-width: 100%;
+    width: 100%;
     flex-direction: row;
     background-color: $blue;
     align-items: center;
@@ -57,7 +57,7 @@
 }
 .banner {
   display: flex;
-  max-width: 80vw;
+  width: 80vw;
   font-family: "Nunito", sans-serif;
   font-size: 2.5vw;
   justify-content: flex-end;
@@ -65,16 +65,20 @@
   margin-left: 25rem;
   &__cover {
     display: flex;
-    max-width: 100%;
+    width: 100%;
     justify-content: flex-end;
   }
   &__covertext {
     display: flex;
-    position: absolute;
     width: 74%;
-    height: 61%;
-    align-items: center;
-    justify-content: flex-start;
+    height: 15%;
+    position: absolute;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    box-sizing: content-box;
+    padding-top: 14rem;
   }
 }
 #cover {
@@ -89,20 +93,13 @@
   font-size: 2.5vw;
   max-width: 100%;
   font-weight: 700;
-  max-width: 100%;
-  position: absolute;
-  z-index: 1;
   color: white;
   align-items: center;
-  margin-top: -5rem;
 }
 #nameing2 {
   display: flex;
   font-size: 1vw;
   font-weight: 600;
-  max-width: 100%;
-  position: absolute;
-  z-index: 2;
   color: white;
-  align-items: center;
+  gap: 1rem;
 }
