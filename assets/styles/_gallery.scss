@@ -12,12 +12,28 @@
         margin-top: 2%;
         margin-bottom: 5%;
         font-family: "Nunito", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
 
+    &__link {
+        font-family: "Nunito", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        align-self: flex-end;
+        color: $black;
     }
 
     &__container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+
+        width: 70%;
+        height: 70%;
+
     }
 
     &__cards_two,
@@ -112,36 +128,36 @@
     }
 
     //еще не готово, текст на карточках
-    &__cards_one_icon_text {
-        background-color: $red;
-        color: $white;
-        mix-blend-mode: inherit;
-        display: none;
-    }
+    // &__cards_one_icon_text {
+    //     background-color: $red;
+    //     color: $white;
+    //     mix-blend-mode: inherit;
+    //     display: none;
+    // }
 
-    &__cards_one_icon_text:hover {
-        background-color: $red;
-        color: $white;
-        mix-blend-mode: inherit;
-    }
+    // &__cards_one_icon_text:hover {
+    //     background-color: $red;
+    //     color: $white;
+    //     mix-blend-mode: inherit;
+    // }
 
-    &__cards_two_icon_text {
-        background-color: $light-green;
-        color: $white;
-        mix-blend-mode: inherit;
-    }
+    // &__cards_two_icon_text {
+    //     background-color: $light-green;
+    //     color: $white;
+    //     mix-blend-mode: inherit;
+    // }
 
-    &__cards_three_icon_text {
-        visibility: hidden;
-    }
+    // &__cards_three_icon_text {
+    //     visibility: hidden;
+    // }
 
-    &__cards_three_icon_text {
-        background-color: $blue;
-        color: $white;
-        mix-blend-mode: inherit;
+    // &__cards_three_icon_text {
+    //     background-color: $blue;
+    //     color: $white;
+    //     mix-blend-mode: inherit;
 
-        visibility: visible;
-    }
+    //     visibility: visible;
+    // }
 
     /////
 
@@ -149,12 +165,24 @@
         background-color: $yellow;
     }
 
+    &__cards_one_text:hover {
+        background-color: $blue;
+    }
+
     &__cards_two_text {
         background-color: $red;
     }
 
+    &__cards_two_text:hover {
+        background-color: $turquoise;
+    }
+
     &__cards_three_text {
         background-color: $green;
+    }
+
+    &__cards_three_text:hover {
+        background-color: $light-green;
     }
 
     &__cards_one_text,
@@ -162,6 +190,10 @@
     &__cards_three_text {
         margin-top: 10px;
         font-family: "Nunito", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        padding-left: 10px;
+        padding-top: 10px;
         // height: 200px;
 
         height: 20%;

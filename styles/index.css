@@ -10,10 +10,24 @@
   margin-top: 2%;
   margin-bottom: 5%;
   font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.gallery__link {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  align-self: flex-end;
+  color: #000;
 }
 .gallery__container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
 }
 .gallery__cards_two, .gallery__cards_one, .gallery__cards_three {
   display: flex;
@@ -81,43 +95,31 @@
   font-family: "Nunito", sans-serif;
   font-size: 2rem;
 }
-.gallery__cards_one_icon_text {
-  background-color: rgb(235, 90, 59);
-  color: #fff;
-  mix-blend-mode: inherit;
-  display: none;
-}
-.gallery__cards_one_icon_text:hover {
-  background-color: rgb(235, 90, 59);
-  color: #fff;
-  mix-blend-mode: inherit;
-}
-.gallery__cards_two_icon_text {
-  background-color: rgb(192, 205, 57);
-  color: #fff;
-  mix-blend-mode: inherit;
-}
-.gallery__cards_three_icon_text {
-  visibility: hidden;
-}
-.gallery__cards_three_icon_text {
-  background-color: rgb(17, 77, 88);
-  color: #fff;
-  mix-blend-mode: inherit;
-  visibility: visible;
-}
 .gallery__cards_one_text {
   background-color: rgb(247, 217, 64);
+}
+.gallery__cards_one_text:hover {
+  background-color: rgb(17, 77, 88);
 }
 .gallery__cards_two_text {
   background-color: rgb(235, 90, 59);
 }
+.gallery__cards_two_text:hover {
+  background-color: rgb(27, 155, 163);
+}
 .gallery__cards_three_text {
   background-color: rgb(56, 175, 115);
+}
+.gallery__cards_three_text:hover {
+  background-color: rgb(192, 205, 57);
 }
 .gallery__cards_one_text, .gallery__cards_two_text, .gallery__cards_three_text {
   margin-top: 10px;
   font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  padding-top: 10px;
   height: 20%;
   color: #fff;
 }
