@@ -16,7 +16,10 @@
     flex-direction: row;
     background-color: $blue;
     align-items: center;
-    justify-content: fix-end;
+    justify-content: space-between;
+  }
+  .frame {
+    display: flex;
   }
   &__phone {
     display: flex;
@@ -25,14 +28,14 @@
   }
   #phonecat {
     display: flex;
-    max-width: 50%;
+    width: 60px;
     margin-left: 2rem;
   }
   &__number {
     display: flex;
     color: white;
     align-self: center;
-    margin: 2rem 9rem 2rem 0rem;
+    padding-left: 3rem;
   }
   &__buttones {
     display: flex;

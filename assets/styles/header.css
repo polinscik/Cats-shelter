@@ -16,7 +16,10 @@
   flex-direction: row;
   background-color: rgb(17, 77, 88);
   align-items: center;
-  justify-content: fix-end;
+  justify-content: space-between;
+}
+.header .frame {
+  display: flex;
 }
 .header__phone {
   display: flex;
@@ -25,14 +28,14 @@
 }
 .header #phonecat {
   display: flex;
-  max-width: 50%;
+  width: 60px;
   margin-left: 2rem;
 }
 .header__number {
   display: flex;
   color: white;
   align-self: center;
-  margin: 2rem 9rem 2rem 0rem;
+  padding-left: 3rem;
 }
 .header__buttones {
   display: flex;
