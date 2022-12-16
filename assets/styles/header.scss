@@ -106,3 +106,101 @@
   color: white;
   gap: 1rem;
 }
+// burger menu//
+@media (max-width: 767px) {
+  .menu {
+    position: absolute;
+    width: 100%;
+    background-color: $blue;
+    z-index: 1;
+  }
+  .header {
+    display: none;
+  }
+  .banner {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+.menu {
+  position: relative;
+  color: white;
+  text-align: center;
+  height: 40px;
+  font-family: "Nunito", sans-serif;
+}
+#burger {
+  display: none;
+}
+
+label {
+  display: block;
+  position: absolute;
+  line-height: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+.burger-line {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  transition: 0.5s all;
+}
+.second,
+.third {
+  top: 18px;
+}
+.fourth {
+  top: 28px;
+}
+.main-menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  transition: 0.5s all;
+  &__n {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid $grey;
+    background-color: $blue;
+  }
+}
+#burger:checked ~ .main-menu {
+  max-height: 500px;
+  font-size: 16px;
+}
+#burger:checked ~ .first {
+  display: none;
+}
+#burger:checked ~ .second {
+  transform: rotate(45deg);
+}
+#burger:checked ~ .third {
+  transform: rotate(-45deg);
+}
+#burger:checked ~ .fourth {
+  display: none;
+}
