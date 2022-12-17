@@ -110,7 +110,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .menu {
     position: absolute;
     width: 100%;
@@ -124,10 +124,49 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    z-index: 2;
+  }
+  .banner__covertext {
+    display: flex;
+    width: 90%;
+    padding-top: 3rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 320px) and (max-width: 520px) {
+  .menu .burger__number {
+    display: none;
+  }
+  .banner__covertext #nameing {
+    font-size: 3.5vw;
+  }
+  .banner__covertext #nameing2 {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 521px) and (max-width: 767px) {
+  .menu .burger__number {
+    margin-left: 4rem;
+  }
+  .banner__covertext {
+    padding-top: 4.5rem;
+  }
+  .banner #nameing {
+    font-size: 3.5vw;
+  }
+  .banner #nameing2 {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .menu {
+    display: none;
+  }
+}
+@media (min-width: 1281px) {
   .menu {
     display: none;
   }
@@ -154,6 +193,18 @@ label {
   height: 100%;
   cursor: pointer;
   z-index: 2;
+}
+
+.burger__number {
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+  padding-top: 0.67em;
+  margin-bottom: 0.1em;
+  font-size: 1rem;
+  margin-left: 5rem;
 }
 
 .burger-line {
@@ -186,6 +237,18 @@ label {
   font-size: 0;
   overflow: hidden;
   transition: 0.5s all;
+}
+.main-menu :hover {
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  transform: none;
+  background: rgb(235, 90, 59);
+  font-size: larger;
+  text-transform: uppercase;
+}
+.main-menu :hover .accent-color {
+  color: black;
 }
 .main-menu__n {
   display: block;
