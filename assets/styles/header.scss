@@ -4,6 +4,7 @@
   margin: 0 auto;
 }
 .header {
+  display: flex;
   width: 80vw;
   font-family: "Nunito", sans-serif;
   font-size: 2.5vmin;
@@ -11,7 +12,7 @@
 
   &__row {
     display: flex;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     width: 100%;
     flex-direction: row;
     background-color: $blue;
@@ -28,34 +29,63 @@
   }
   #phonecat {
     display: flex;
-    width: 60px;
-    margin-left: 2rem;
+    width: 40px;
+    margin: 1.4rem 0.5rem 1.4rem 2rem;
   }
   &__number {
     display: flex;
     color: white;
     align-self: center;
-    padding-left: 3rem;
+    padding-left: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    flex-shrink: 0;
+    flex-grow: 1;
   }
   &__buttones {
+    font-family: "Nunito", sans-serif;
+    color: white;
     display: flex;
     padding: 2rem 7rem;
-    gap: 4rem;
+    gap: 3rem;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-  }
-  .button1 {
-    display: flex;
-    justify-self: end;
-    background-color: $red;
-    color: white;
-  }
-  .button2 {
-    display: flex;
-    justify-self: end;
-    background-color: $yellow;
-    color: white;
+    flex-shrink: 1;
+    flex-grow: 1;
+    justify-content: center;
+    .header__buttones:hover {
+      background-color: $green;
+      text-decoration: none;
+      color: white;
+      opacity: 1;
+      transform: none;
+      font-size: larger;
+      text-transform: uppercase;
+    }
+    #btn1 {
+      color: white;
+    }
+    #btn2 {
+      color: rgb(8, 8, 8);
+    }
+    #btn2:hover {
+      color: white;
+    }
+    .button1 {
+      display: flex;
+      justify-self: end;
+      background-color: $red;
+      color: white;
+      flex-shrink: 1;
+    }
+    .button2 {
+      display: flex;
+      justify-self: end;
+      background-color: $yellow;
+      color: white;
+      flex-shrink: 1;
+    }
   }
 }
 .banner {
@@ -66,6 +96,7 @@
   justify-content: flex-end;
   box-sizing: border-box;
   margin-left: 25rem;
+
   &__cover {
     display: flex;
     width: 100%;
@@ -149,6 +180,7 @@
   .menu {
     .burger__number {
       margin-left: 4rem;
+      flex-shrink: 1;
     }
   }
   .banner {
@@ -167,15 +199,70 @@
   .menu {
     display: none;
   }
+  .header__buttones {
+    flex-grow: 2;
+    gap: 3rem;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+  .header {
+    margin-right: 0rem;
+    &__row {
+      margin: 0 auto;
+      #phonecat {
+        width: 30px;
+        margin-top: 1rem;
+        width: 1fr;
+        font-size: 0.6rem;
+      }
+    }
+  }
+  .banner {
+    &__covertext {
+      padding-top: 1rem;
+    }
+  }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
   .menu {
     display: none;
   }
+  .header__buttones {
+    gap: 4rem;
+    font-size: 1rem;
+    flex-grow: 2;
+    padding: 1rem 3rem;
+  }
+  #phonecat {
+    width: 30px;
+    margin-top: 1rem;
+    font-size: 0.6rem;
+  }
+  .banner {
+    &__covertext {
+      margin-top: 1rem;
+      height: 0;
+    }
+  }
 }
 @media (min-width: 1281px) {
   .menu {
     display: none;
+  }
+  .frame {
+    width: 30%;
+  }
+  .header__buttones {
+    gap: 4rem;
+    font-size: 1rem;
+    flex-grow: 2;
+    padding: 1rem 3rem;
+  }
+  .banner {
+    &__covertext {
+      height: 0;
+      margin-top: 5rem;
+    }
   }
 }
 .menu {

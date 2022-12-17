@@ -4,6 +4,7 @@
 }
 
 .header {
+  display: flex;
   width: 80vw;
   font-family: "Nunito", sans-serif;
   font-size: 2.5vmin;
@@ -11,7 +12,7 @@
 }
 .header__row {
   display: flex;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   width: 100%;
   flex-direction: row;
   background-color: rgb(17, 77, 88);
@@ -28,34 +29,63 @@
 }
 .header #phonecat {
   display: flex;
-  width: 60px;
-  margin-left: 2rem;
+  width: 40px;
+  margin: 1.4rem 0.5rem 1.4rem 2rem;
 }
 .header__number {
   display: flex;
   color: white;
   align-self: center;
-  padding-left: 3rem;
+  padding-left: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  flex-shrink: 0;
+  flex-grow: 1;
 }
 .header__buttones {
+  font-family: "Nunito", sans-serif;
+  color: white;
   display: flex;
   padding: 2rem 7rem;
-  gap: 4rem;
+  gap: 3rem;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  justify-content: center;
 }
-.header .button1 {
+.header__buttones .header__buttones:hover {
+  background-color: rgb(56, 175, 115);
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  transform: none;
+  font-size: larger;
+  text-transform: uppercase;
+}
+.header__buttones #btn1 {
+  color: white;
+}
+.header__buttones #btn2 {
+  color: rgb(8, 8, 8);
+}
+.header__buttones #btn2:hover {
+  color: white;
+}
+.header__buttones .button1 {
   display: flex;
   justify-self: end;
   background-color: rgb(235, 90, 59);
   color: white;
+  flex-shrink: 1;
 }
-.header .button2 {
+.header__buttones .button2 {
   display: flex;
   justify-self: end;
   background-color: rgb(247, 217, 64);
   color: white;
+  flex-shrink: 1;
 }
 
 .banner {
@@ -145,6 +175,7 @@
 @media (min-width: 521px) and (max-width: 767px) {
   .menu .burger__number {
     margin-left: 4rem;
+    flex-shrink: 1;
   }
   .banner__covertext {
     padding-top: 4.5rem;
@@ -160,15 +191,64 @@
   .menu {
     display: none;
   }
+  .header__buttones {
+    flex-grow: 2;
+    gap: 3rem;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+  .header {
+    margin-right: 0rem;
+  }
+  .header__row {
+    margin: 0 auto;
+  }
+  .header__row #phonecat {
+    width: 30px;
+    margin-top: 1rem;
+    width: 1fr;
+    font-size: 0.6rem;
+  }
+  .banner__covertext {
+    padding-top: 1rem;
+  }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
   .menu {
     display: none;
   }
+  .header__buttones {
+    gap: 4rem;
+    font-size: 1rem;
+    flex-grow: 2;
+    padding: 1rem 3rem;
+  }
+  #phonecat {
+    width: 30px;
+    margin-top: 1rem;
+    font-size: 0.6rem;
+  }
+  .banner__covertext {
+    margin-top: 1rem;
+    height: 0;
+  }
 }
 @media (min-width: 1281px) {
   .menu {
     display: none;
+  }
+  .frame {
+    width: 30%;
+  }
+  .header__buttones {
+    gap: 4rem;
+    font-size: 1rem;
+    flex-grow: 2;
+    padding: 1rem 3rem;
+  }
+  .banner__covertext {
+    height: 0;
+    margin-top: 5rem;
   }
 }
 .menu {
