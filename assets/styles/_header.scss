@@ -5,6 +5,8 @@
 }
 .header {
   display: flex;
+  position: fixed;
+  z-index: 1000;
   width: 80vw;
   font-family: "Nunito", sans-serif;
   font-size: 2.5vmin;
@@ -96,11 +98,13 @@
   justify-content: flex-end;
   box-sizing: border-box;
   margin-left: 25rem;
+  margin-top: 0rem;
 
   &__cover {
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    margin-top: 8.2rem;
   }
   &__covertext {
     display: flex;
@@ -166,6 +170,9 @@
     }
   }
   .banner {
+    &__cover {
+      margin-top: 0rem;
+    }
     &__covertext {
       #nameing {
         font-size: 3.5vw;
@@ -184,6 +191,9 @@
     }
   }
   .banner {
+    &__cover {
+      margin-top: 0rem;
+    }
     &__covertext {
       padding-top: 4.5rem;
     }
@@ -218,8 +228,18 @@
     }
   }
   .banner {
+    &__cover {
+      margin-top: 9rem;
+    }
     &__covertext {
       padding-top: 1rem;
+    }
+  }
+}
+@media (min-width: 904px) and (max-width: 1024px) {
+  .banner {
+    &__cover {
+      margin-top: 8rem;
     }
   }
 }

@@ -81,6 +81,8 @@ img {
 .aside__nav {
   background-color: #fff;
   padding: 1rem;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
   min-width: max-content;
 }
 
@@ -188,6 +190,388 @@ img {
 .socials {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   align-items: center;
+}
+
+* {
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  width: 80vw;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5vmin;
+  margin-left: 25rem;
+}
+.header__row {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+  flex-direction: row;
+  background-color: rgb(17, 77, 88);
+  align-items: center;
+  justify-content: space-between;
+}
+.header .frame {
+  display: flex;
+}
+.header__phone {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.header #phonecat {
+  display: flex;
+  width: 40px;
+  margin: 1.4rem 0.5rem 1.4rem 2rem;
+}
+.header__number {
+  display: flex;
+  color: white;
+  align-self: center;
+  padding-left: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+.header__buttones {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  display: flex;
+  padding: 2rem 7rem;
+  gap: 3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  justify-content: center;
+}
+.header__buttones .header__buttones:hover {
+  background-color: rgb(56, 175, 115);
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  transform: none;
+  font-size: larger;
+  text-transform: uppercase;
+}
+.header__buttones #btn1 {
+  color: white;
+}
+.header__buttones #btn2 {
+  color: rgb(8, 8, 8);
+}
+.header__buttones #btn2:hover {
+  color: white;
+}
+.header__buttones .button1 {
+  display: flex;
+  justify-self: end;
+  background-color: rgb(235, 90, 59);
+  color: white;
+  flex-shrink: 1;
+}
+.header__buttones .button2 {
+  display: flex;
+  justify-self: end;
+  background-color: rgb(247, 217, 64);
+  color: white;
+  flex-shrink: 1;
+}
+
+.banner {
+  display: flex;
+  width: 80vw;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5vw;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  margin-left: 25rem;
+  margin-top: 0rem;
+}
+.banner__cover {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 8.2rem;
+}
+.banner__covertext {
+  display: flex;
+  width: 74%;
+  height: 15%;
+  position: absolute;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  box-sizing: content-box;
+  padding-top: 14rem;
+}
+
+#cover {
+  display: flex;
+  flex: 0 1 auto;
+  max-width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+#nameing {
+  display: flex;
+  font-size: 2.5vw;
+  max-width: 100%;
+  font-weight: 700;
+  color: white;
+  align-items: center;
+}
+
+#nameing2 {
+  display: flex;
+  font-size: 1vw;
+  font-weight: 600;
+  color: white;
+  gap: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .menu {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(17, 77, 88);
+    z-index: 1;
+  }
+  .header {
+    display: none;
+  }
+  .banner {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .banner__covertext {
+    display: flex;
+    width: 90%;
+    padding-top: 3rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 520px) {
+  .menu .burger__number {
+    display: none;
+  }
+  .banner__cover {
+    margin-top: 0rem;
+  }
+  .banner__covertext #nameing {
+    font-size: 3.5vw;
+  }
+  .banner__covertext #nameing2 {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 521px) and (max-width: 767px) {
+  .menu .burger__number {
+    margin-left: 4rem;
+    flex-shrink: 1;
+  }
+  .banner__cover {
+    margin-top: 0rem;
+  }
+  .banner__covertext {
+    padding-top: 4.5rem;
+  }
+  .banner #nameing {
+    font-size: 3.5vw;
+  }
+  .banner #nameing2 {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+  .header__buttones {
+    flex-grow: 2;
+    gap: 3rem;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+  .header {
+    margin-right: 0rem;
+  }
+  .header__row {
+    margin: 0 auto;
+  }
+  .header__row #phonecat {
+    width: 30px;
+    margin-top: 1rem;
+    width: 1fr;
+    font-size: 0.6rem;
+  }
+  .banner__cover {
+    margin-top: 9rem;
+  }
+  .banner__covertext {
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 904px) and (max-width: 1024px) {
+  .banner__cover {
+    margin-top: 8rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .menu {
+    display: none;
+  }
+  .header__buttones {
+    gap: 4rem;
+    font-size: 1rem;
+    flex-grow: 2;
+    padding: 1rem 3rem;
+  }
+  #phonecat {
+    width: 30px;
+    margin-top: 1rem;
+    font-size: 0.6rem;
+  }
+  .banner__covertext {
+    margin-top: 1rem;
+    height: 0;
+  }
+}
+@media (min-width: 1281px) {
+  .menu {
+    display: none;
+  }
+  .frame {
+    width: 30%;
+  }
+  .header__buttones {
+    gap: 4rem;
+    font-size: 1rem;
+    flex-grow: 2;
+    padding: 1rem 3rem;
+  }
+  .banner__covertext {
+    height: 0;
+    margin-top: 5rem;
+  }
+}
+.menu {
+  position: relative;
+  color: white;
+  text-align: center;
+  height: 40px;
+  font-family: "Nunito", sans-serif;
+}
+
+#burger {
+  display: none;
+}
+
+label {
+  display: block;
+  position: absolute;
+  line-height: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.burger__number {
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+  padding-top: 0.67em;
+  margin-bottom: 0.1em;
+  font-size: 1rem;
+  margin-left: 5rem;
+}
+
+.burger-line {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  transition: 0.5s all;
+}
+
+.second,
+.third {
+  top: 18px;
+}
+
+.fourth {
+  top: 28px;
+}
+
+.main-menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+.main-menu :hover {
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  transform: none;
+  background: rgb(235, 90, 59);
+  font-size: larger;
+  text-transform: uppercase;
+}
+.main-menu :hover .accent-color {
+  color: black;
+}
+.main-menu__n {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid rgb(205, 187, 175);
+  background-color: rgb(17, 77, 88);
+}
+
+#burger:checked ~ .main-menu {
+  max-height: 500px;
+  font-size: 16px;
+}
+
+#burger:checked ~ .first {
+  display: none;
+}
+
+#burger:checked ~ .second {
+  transform: rotate(45deg);
+}
+
+#burger:checked ~ .third {
+  transform: rotate(-45deg);
+}
+
+#burger:checked ~ .fourth {
+  display: none;
 }
