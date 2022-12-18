@@ -243,6 +243,7 @@ img {
 }
 .header__buttones {
   font-family: "Nunito", sans-serif;
+  font-weight: 800;
   color: white;
   display: flex;
   padding: 2rem 7rem;
@@ -267,7 +268,7 @@ img {
   color: white;
 }
 .header__buttones #btn2 {
-  color: rgb(8, 8, 8);
+  color: white;
 }
 .header__buttones #btn2:hover {
   color: white;
@@ -278,13 +279,15 @@ img {
   background-color: rgb(235, 90, 59);
   color: white;
   flex-shrink: 1;
+  border: 2px solid white;
 }
 .header__buttones .button2 {
   display: flex;
   justify-self: end;
-  background-color: rgb(247, 217, 64);
+  background-color: rgb(27, 155, 163);
   color: white;
   flex-shrink: 1;
+  border: 2px solid white;
 }
 
 .banner {
@@ -295,13 +298,14 @@ img {
   justify-content: flex-end;
   box-sizing: border-box;
   margin-left: 25rem;
-  margin-top: 0rem;
+  margin-top: 3rem;
+  margin-right: 0;
 }
 .banner__cover {
   display: flex;
   width: 100%;
+  max-height: 780px;
   justify-content: flex-end;
-  margin-top: 8.2rem;
 }
 .banner__covertext {
   display: flex;
@@ -381,6 +385,9 @@ img {
     margin-left: 4rem;
     flex-shrink: 1;
   }
+  .btn {
+    display: none;
+  }
   .banner__cover {
     margin-top: 0rem;
   }
@@ -396,6 +403,9 @@ img {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .menu {
+    display: none;
+  }
+  .btn {
     display: none;
   }
   .header__buttones {
@@ -416,20 +426,18 @@ img {
     width: 1fr;
     font-size: 0.6rem;
   }
-  .banner__cover {
-    margin-top: 9rem;
+  .banner #cover {
+    margin-top: 1rem;
   }
   .banner__covertext {
     padding-top: 1rem;
   }
 }
-@media (min-width: 904px) and (max-width: 1024px) {
-  .banner__cover {
-    margin-top: 8rem;
-  }
-}
 @media (min-width: 1025px) and (max-width: 1280px) {
   .menu {
+    display: none;
+  }
+  .btn {
     display: none;
   }
   .header__buttones {
@@ -450,6 +458,9 @@ img {
 }
 @media (min-width: 1281px) {
   .menu {
+    display: none;
+  }
+  .btn {
     display: none;
   }
   .frame {
@@ -574,4 +585,27 @@ label {
 
 #burger:checked ~ .fourth {
   display: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100vw;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  color: white;
+  padding: 2rem 6rem;
+  gap: 3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  justify-content: center;
+}
+.btn__one {
+  display: flex;
+}
+.btn__two {
+  display: flex;
 }
