@@ -2,13 +2,13 @@ img {
     max-width: 100%;
 }
 
-.content {
+.page-container {
     display: flex;
     font-family: "Nunito", sans-serif;
     font-size: 2.5vmin;
 }
 
-.content-sidebar {
+.aside {
     display: none;
     max-width: 25%;
 
