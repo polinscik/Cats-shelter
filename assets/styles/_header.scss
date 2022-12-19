@@ -29,7 +29,7 @@
   }
   #phonecat {
     display: flex;
-    width: 40px;
+    max-width: 40px;
     margin: 1.4rem 0.5rem 1.4rem 2rem;
   }
   &__number {
@@ -102,7 +102,7 @@
   &__cover {
     display: flex;
     width: 80%;
-    max-height: 890px;
+    max-height: 900px;
     justify-content: flex-end;
   }
   &__covertext {
@@ -246,14 +246,20 @@ label {
     position: absolute;
     width: 100%;
     background-color: $blue;
-    z-index: 1;
+    z-index: 1000;
   }
   .header {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     &__row {
       flex-direction: column;
       width: 100%;
+      margin-top: 2.6rem;
+      flex-shrink: 1;
+    }
+    &__buttones {
+      padding: 1rem 3rem;
+      flex-shrink: 1;
     }
     .frame {
       display: none;
@@ -265,6 +271,7 @@ label {
     position: relative;
     &__cover {
       margin-top: 0rem;
+      width: 100%;
     }
     &__covertext {
       display: flex;
@@ -285,14 +292,25 @@ label {
       display: none;
     }
   }
+  .header {
+    &__row {
+      display: flex;
+      flex-direction: column;
+    }
+    header__buttones {
+      padding: 1rem 3rem;
+      gap: 3rem;
+      font-size: 10px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
 }
 
 @media (min-width: 521px) and (max-width: 767px) {
-  .menu {
-    .burger__number {
-      margin-left: 4rem;
-      flex-shrink: 1;
-    }
+  .burger__number {
+    margin-left: 4rem;
+    flex-shrink: 1;
   }
   .banner {
     &__cover {
@@ -314,52 +332,56 @@ label {
     display: none;
   }
   .header__buttones {
-    flex-grow: 0;
     flex-shrink: 1;
-    gap: 3rem;
+    gap: 1rem;
     font-size: 1rem;
-    padding: 1.5rem;
+    padding: 1.8rem;
   }
   .header {
     margin-right: 0rem;
     &__row {
       #phonecat {
-        width: 30px;
+        width: 40px;
         margin-top: 1rem;
-        width: 1fr;
-        font-size: 0.6rem;
-        flex-grow: 0;
       }
+    }
+    &__number {
+      padding: 0;
+      font-size: 1rem;
     }
   }
   .banner {
     &__cover {
       margin-block: 6rem;
     }
-
     #cover {
       margin-block: 2rem;
     }
     &__covertext {
-      padding-top: 7rem;
+      padding-top: 6rem;
+      flex-shrink: 1;
     }
   }
 }
-
+@media (min-width: 768px) and (max-width: 804px) {
+  .header__buttones {
+    padding: 1rem;
+  }
+}
 @media (min-width: 1025px) and (max-width: 1280px) {
   .menu {
     display: none;
   }
   .header__buttones {
-    gap: 4rem;
-    font-size: 1rem;
-    flex-grow: 2;
-    padding: 1rem 3rem;
+    padding: 1.5rem;
+  }
+  .header__number {
+    padding: 0;
+    max-width: 100%;
   }
   #phonecat {
-    width: 30px;
+    max-width: 40px;
     margin-top: 1rem;
-    font-size: 0.6rem;
   }
   .banner {
     &__covertext {
@@ -378,10 +400,15 @@ label {
     width: 30%;
   }
   .header__buttones {
-    gap: 4rem;
-    font-size: 1rem;
+    gap: 3rem;
+    font-size: 1.2rem;
     flex-grow: 2;
     padding: 1rem 3rem;
+  }
+  .header__number {
+    padding: 0;
+    max-width: 100%;
+    font-size: 1.5rem;
   }
   .banner {
     margin-top: 0;
