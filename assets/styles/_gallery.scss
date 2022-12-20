@@ -1,11 +1,17 @@
-.gallery {
+.gallery__container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    // justify-content: center;
     align-content: center;
-    // background-color: pink;
+    align-items: center;
+
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+
+    max-width: 60%;
+    max-height: 70%;
 
     &__title {
         align-self: center;
@@ -24,142 +30,82 @@
         color: $black;
     }
 
-    &__container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-
-        width: 70%;
-        height: 70%;
-
-    }
-
-    &__cards_two,
-    &__cards_one,
-    &__cards_three {
+    &__card {
         display: flex;
         flex-direction: column;
-        margin: 0 10px auto;
+        align-content: center;
+        justify-content: flex-start;
 
-        width: 450px;
-        height: 620px;
+        background-color: #fff;
 
-        //чтоб уменьшалось
-        // width: 20%;
-        // height: 100%;
-        background-color: $white;
-
-        transition: 1s;
-        opacity: 1;
-        transform: scale(0.85, 0.85, 0.85);
+        max-width: 30%;
+        max-height: 60%;
+        margin: 10px 10px 10px 10px;
     }
 
-    &__cards_one_photo_cat,
-    &__cards_two_photo_cat,
-    &__cards_three_photo_cat {
+    &__img {
         max-width: 100%;
+        max-height: 80%;
         border-radius: 50%;
-        width: 450px;
-        height: 450px;
-
-        // width: 100%;
-        // height: 100%;
+        margin-bottom: 5%;
     }
 
-    &__cards_one_photo_cat {
-        background-image: url('/assets/images/cat-gallery-photo1.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    //1 карточка
+    &__cards_one_photo_cat__hover {
+        display: none;
     }
 
-    &__cards_one_photo_cat:hover {
-        background-image: url('/assets/images/gallery_cards_one_icon.png');
-        background-repeat: no-repeat;
+    &__cards_one_photo_cat__hover {
+        border-radius: 15%;
+        margin-bottom: 5%;
+    }
+
+    &__card:hover .gallery__cards_one_photo_cat {
+        display: none;
+    }
+
+    &__card:hover .gallery__cards_one_photo_cat__hover {
+        display: block;
         background-color: $green;
-        background-size: 70%;
-        background-position: center;
     }
 
-    &__cards_two_photo_cat {
-        background-image: url('/assets/images/cat-gallery-photo2.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    //2 карточка
+    &__cards_two_photo_cat__hover {
+        display: none;
     }
 
-    &__cards_two_photo_cat:hover {
-        background-image: url('/assets/images/gallery_cards_two_icon.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: $light-green;
-        background-size: 70%;
+    &__cards_two_photo_cat__hover {
+        border-radius: 15%;
+        margin-bottom: 5%;
     }
 
-    &__cards_three_photo_cat {
-        background-image: url('/assets/images/cat-gallery-photo3.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &__card:hover .gallery__cards_two_photo_cat {
+        display: none;
     }
 
-    &__cards_three_photo_cat:hover {
-        background-image: url('/assets/images/gallery_cards_three_icon.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: $grey;
-        background-size: 70%;
+    &__card:hover .gallery__cards_two_photo_cat__hover {
+        display: block;
+        background-color: $green;
     }
 
-    &__cards_one_icon_text,
-    &__cards_two_icon_text,
-    &__cards_three_icon_text {
-        font-family: "Nunito", sans-serif;
-        font-size: 2rem;
-
+    //3 карточка
+    &__cards_three_photo_cat__hover {
+        display: none;
     }
 
-    //еще не готово, текст на карточках
-    // &__cards_one_icon_text {
-    //     background-color: $red;
-    //     color: $white;
-    //     mix-blend-mode: inherit;
-    //     display: none;
-    // }
+    &__cards_three_photo_cat__hover {
+        border-radius: 15%;
+        margin-bottom: 5%;
+    }
 
-    // &__cards_one_icon_text:hover {
-    //     background-color: $red;
-    //     color: $white;
-    //     mix-blend-mode: inherit;
-    // }
+    &__card:hover .gallery__cards_three_photo_cat {
+        display: none;
+    }
 
-    // &__cards_two_icon_text {
-    //     background-color: $light-green;
-    //     color: $white;
-    //     mix-blend-mode: inherit;
-    // }
-
-    // &__cards_three_icon_text {
-    //     visibility: hidden;
-    // }
-
-    // &__cards_three_icon_text {
-    //     background-color: $blue;
-    //     color: $white;
-    //     mix-blend-mode: inherit;
-
-    //     visibility: visible;
-    // }
-
-    /////
+    &__card:hover .gallery__cards_three_photo_cat__hover {
+        display: block;
+        background-color: $green;
+    }
 
     &__cards_one_text {
         background-color: $yellow;
@@ -185,21 +131,78 @@
         background-color: $light-green;
     }
 
-    &__cards_one_text,
-    &__cards_two_text,
-    &__cards_three_text {
+    &__cards_text {
         margin-top: 10px;
         font-family: "Nunito", sans-serif;
         font-weight: 400;
         font-size: 1.5rem;
-        padding-left: 10px;
-        padding-top: 10px;
+        padding-left: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
         // height: 200px;
 
         height: 20%;
         // width: 100%;
         color: $white;
+    }
+}
 
+//больше это размера работать не будет
+@media (min-width: $mobile) and (max-width: $tablet) {
+    .gallery {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 80%;
+        max-height: 60%;
     }
 
+    .gallery__card {
+        flex-direction: column;
+        background-color: #fff;
+
+        max-width: 90%;
+        max-height: 60%;
+    }
+
+    .gallery__cards_text {
+        font-size: 1rem;
+        max-height: 40%;
+    }
+
+    .gallery__link {
+        align-self: center;
+        padding-left: 5%;
+    }
+
+}
+
+@media (min-width: $tablet) and (max-width: $large-desktop) {
+    .gallery {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 80%;
+        max-height: 70%;
+    }
+
+    .gallery__card {
+        flex-direction: column;
+        background-color: #fff;
+
+        max-width: 30%;
+        max-height: 80%;
+    }
+
+    .gallery__cards_text {
+        font-size: 1.3rem;
+        max-height: 40%;
+    }
+
+    .gallery__link {
+        align-self: center;
+        padding-left: 5%;
+    }
 }
