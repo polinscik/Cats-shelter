@@ -63,17 +63,6 @@
       font-size: larger;
       text-transform: uppercase;
     }
-    #btn1 {
-      color: white;
-      width: 100%;
-    }
-    #btn2 {
-      color: white;
-      width: 100%;
-    }
-    #btn2:hover {
-      color: white;
-    }
     .button1 {
       display: flex;
       justify-self: end;
@@ -81,6 +70,7 @@
       color: white;
       flex-shrink: 1;
       border: 2px solid white;
+      width: 200px;
     }
     .button2 {
       display: flex;
@@ -89,6 +79,7 @@
       color: white;
       flex-shrink: 1;
       border: 2px solid white;
+      width: 200px;
     }
   }
 }
@@ -247,25 +238,60 @@ label {
       display: none;
     }
   }
-  .header {
-    &__row {
-      display: flex;
+  .menu {
+    position: absolute;
+    width: 100%;
+    background-color: $blue;
+    z-index: 1000;
+  }
+
+  .banner {
+    &__cover {
+      margin-top: 0rem;
       width: 100%;
-      z-index: 500;
     }
+    #cover {
+      margin-top: 2.8rem;
+      flex-shrink: 0;
+      max-height: 100%;
+    }
+    &__covertext {
+      align-content: flex-start;
+      display: flex;
+      width: 90%;
+      padding-top: 0;
+    }
+    #nameing {
+      font-size: 3.5vw;
+    }
+    #nameing2 {
+      font-size: 2vw;
+    }
+  }
+  .header {
     .frame {
       display: none;
     }
-    .header__buttones {
+    &__row {
+      display: flex;
+      width: 100%;
+      margin-top: 15rem;
+    }
+    &__buttones {
+      display: flex;
       max-width: 100%;
       padding: 2rem 1rem;
-      gap: 2rem;
-      font-size: 10px;
-      justify-content: center;
+      gap: 1rem;
+      font-size: 1rem;
+      justify-items: center;
       flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
     }
   }
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
   .menu {
     position: absolute;
@@ -277,14 +303,15 @@ label {
     max-width: 100%;
     margin: 0 auto;
     &__row {
-      flex-direction: column;
-      flex-wrap: wrap;
+      display: flow-root;
       width: 100%;
       margin-top: 2.6rem;
     }
     &__buttones {
       padding: 1rem 3rem;
       flex-shrink: 1;
+      max-width: 100%;
+      justify-content: center;
     }
     .frame {
       display: none;
@@ -318,18 +345,29 @@ label {
   }
   .header {
     &__row {
-      display: flex;
+      display: flow-root;
       z-index: 500;
     }
     .header__buttones {
-      padding: 2rem 1rem;
-      gap: 2rem;
-      font-size: 10px;
+      display: flex;
+      flex-shrink: 2;
       justify-content: center;
+      align-content: center;
+      padding: 1rem;
+      font-size: 0.77rem;
+      gap: 0.5rem;
+      max-width: 100%;
+    }
+  }
+  .banner {
+    &__cover {
+      margin-top: 2rem;
+    }
+    #cover {
+      margin-block: 6rem;
     }
   }
 }
-
 @media (min-width: 521px) and (max-width: 767px) {
   .burger__number {
     margin-left: 4rem;
@@ -337,16 +375,36 @@ label {
   }
   .banner {
     &__cover {
-      margin-top: 0rem;
+      margin-top: 6rem;
     }
     &__covertext {
-      padding-top: 4.5rem;
+      padding-top: 4rem;
+      align-content: center;
+      justify-content: center;
     }
-    #nameing {
-      font-size: 3.5vw;
+    #cover {
+      margin-block: 2rem;
+      #nameing {
+        font-size: 3.5vw;
+      }
+      #nameing2 {
+        font-size: 2vw;
+      }
     }
-    #nameing2 {
-      font-size: 2vw;
+  }
+  .header__buttones {
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    gap: 1rem;
+    &__button1 {
+      width: 100px;
+    }
+    &__button2 {
+      width: 100px;
     }
   }
 }
@@ -358,7 +416,8 @@ label {
     flex-shrink: 1;
     gap: 1rem;
     font-size: 1rem;
-    padding: 1.8rem;
+    padding: 1rem;
+    width: 150px;
   }
   .header {
     margin-right: 0rem;
@@ -375,32 +434,32 @@ label {
   }
   .banner {
     &__cover {
-      margin-block: 6rem;
+      margin-top: 5.5rem;
     }
     #cover {
       margin-block: 2rem;
     }
     &__covertext {
-      padding-top: 6rem;
+      padding-top: 8rem;
       flex-shrink: 1;
+      justify-content: center;
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header__buttones {
-    padding: 1rem;
-  }
-}
+
 @media (min-width: 1025px) and (max-width: 1280px) {
   .menu {
     display: none;
   }
   .header__buttones {
     padding: 1.5rem;
+    gap: 1rem;
+    font-size: 1.2rem;
   }
   .header__number {
     padding: 0;
     max-width: 100%;
+    font-size: 1.2rem;
   }
   #phonecat {
     max-width: 40px;
