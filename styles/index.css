@@ -263,9 +263,11 @@ img {
 }
 .header__buttones #btn1 {
   color: white;
+  width: 100%;
 }
 .header__buttones #btn2 {
   color: white;
+  width: 100%;
 }
 .header__buttones #btn2:hover {
   color: white;
@@ -451,6 +453,27 @@ label {
   display: none;
 }
 
+@media (max-width: 319px) {
+  .menu .burger__number {
+    display: none;
+  }
+  .header__row {
+    display: flex;
+    width: 100%;
+    z-index: 500;
+  }
+  .header .frame {
+    display: none;
+  }
+  .header .header__buttones {
+    max-width: 100%;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    font-size: 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .menu {
     position: absolute;
@@ -464,9 +487,9 @@ label {
   }
   .header__row {
     flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 2.6rem;
-    flex-shrink: 1;
   }
   .header__buttones {
     padding: 1rem 3rem;
@@ -478,7 +501,6 @@ label {
   .banner {
     width: 100%;
     margin: 0 auto;
-    position: relative;
   }
   .banner__cover {
     margin-top: 0rem;
@@ -502,13 +524,12 @@ label {
   }
   .header__row {
     display: flex;
-    flex-direction: column;
+    z-index: 500;
   }
-  .header header__buttones {
-    padding: 1rem 3rem;
-    gap: 3rem;
+  .header .header__buttones {
+    padding: 2rem 1rem;
+    gap: 2rem;
     font-size: 10px;
-    flex-grow: 1;
     justify-content: center;
   }
 }
@@ -562,7 +583,7 @@ label {
     flex-shrink: 1;
   }
 }
-@media (min-width: 768px) and (max-width: 804px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .header__buttones {
     padding: 1rem;
   }

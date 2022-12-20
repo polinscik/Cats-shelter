@@ -13,7 +13,6 @@
 
   &__row {
     display: flex;
-    //flex: 1 1 auto;//
     width: 80%;
     flex-direction: row;
     background-color: $blue;
@@ -66,9 +65,11 @@
     }
     #btn1 {
       color: white;
+      width: 100%;
     }
     #btn2 {
       color: white;
+      width: 100%;
     }
     #btn2:hover {
       color: white;
@@ -240,7 +241,31 @@ label {
 #burger:checked ~ .fourth {
   display: none;
 }
-
+@media (max-width: 319px) {
+  .menu {
+    .burger__number {
+      display: none;
+    }
+  }
+  .header {
+    &__row {
+      display: flex;
+      width: 100%;
+      z-index: 500;
+    }
+    .frame {
+      display: none;
+    }
+    .header__buttones {
+      max-width: 100%;
+      padding: 2rem 1rem;
+      gap: 2rem;
+      font-size: 10px;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .menu {
     position: absolute;
@@ -253,9 +278,9 @@ label {
     margin: 0 auto;
     &__row {
       flex-direction: column;
+      flex-wrap: wrap;
       width: 100%;
       margin-top: 2.6rem;
-      flex-shrink: 1;
     }
     &__buttones {
       padding: 1rem 3rem;
@@ -268,7 +293,6 @@ label {
   .banner {
     width: 100%;
     margin: 0 auto;
-    position: relative;
     &__cover {
       margin-top: 0rem;
       width: 100%;
@@ -295,13 +319,12 @@ label {
   .header {
     &__row {
       display: flex;
-      flex-direction: column;
+      z-index: 500;
     }
-    header__buttones {
-      padding: 1rem 3rem;
-      gap: 3rem;
+    .header__buttones {
+      padding: 2rem 1rem;
+      gap: 2rem;
       font-size: 10px;
-      flex-grow: 1;
       justify-content: center;
     }
   }
@@ -363,7 +386,7 @@ label {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 804px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .header__buttones {
     padding: 1rem;
   }
