@@ -234,25 +234,53 @@ label {
 }
 @media (max-width: 319px) {
   .menu {
-    .burger__number {
-      display: none;
-    }
-  }
-  .menu {
     position: absolute;
     width: 100%;
     background-color: $blue;
     z-index: 1000;
+    .burger__number {
+      display: none;
+    }
   }
-
+  .header {
+    max-width: 100%;
+    .frame {
+      display: none;
+    }
+    &__row {
+      display: flex;
+      width: 100%;
+      margin-top: 2.7rem;
+    }
+    &__buttones {
+      display: flex;
+      max-width: 100%;
+      padding: 1rem 1rem;
+      gap: 1rem;
+      font-size: 0.7rem;
+      justify-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+    }
+    .button1 {
+      width: 180px;
+      padding: 0.4rem;
+    }
+    .button2 {
+      width: 180px;
+      padding: 0.4rem;
+    }
+  }
   .banner {
     &__cover {
-      margin-top: 0rem;
+      margin-top: 5rem;
       width: 100%;
     }
     #cover {
-      margin-top: 2.8rem;
-      flex-shrink: 0;
+      margin-top: 4rem;
+      flex-shrink: 1;
       max-height: 100%;
     }
     &__covertext {
@@ -262,32 +290,10 @@ label {
       padding-top: 0;
     }
     #nameing {
-      font-size: 3.5vw;
+      font-size: 4vw;
     }
     #nameing2 {
-      font-size: 2vw;
-    }
-  }
-  .header {
-    .frame {
-      display: none;
-    }
-    &__row {
-      display: flex;
-      width: 100%;
-      margin-top: 15rem;
-    }
-    &__buttones {
-      display: flex;
-      max-width: 100%;
-      padding: 2rem 1rem;
-      gap: 1rem;
-      font-size: 1rem;
-      justify-items: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-      align-content: center;
+      font-size: 2.5vw;
     }
   }
 }
@@ -350,7 +356,7 @@ label {
     }
     .header__buttones {
       display: flex;
-      flex-shrink: 2;
+      flex-shrink: 1;
       justify-content: center;
       align-content: center;
       padding: 1rem;
