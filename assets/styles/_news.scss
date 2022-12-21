@@ -1,0 +1,121 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    &__title {
+        text-align: center;
+        line-height: 3.5rem;
+        border-top: 0.3rem dotted $red;
+    }
+
+    &__posts {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        gap: 0.6rem;
+        transition: none;
+        @media (min-width: $tablet) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            margin: 0 0.5rem;
+        }
+    }
+
+    &__post {
+        display: flex;
+        padding: 0.5rem;
+        gap: 0.5rem;
+        align-items: center;
+        min-height: 21vh;
+        max-width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-width: $tablet) {
+            flex-direction: column;
+        }
+        &_style-one {
+            background-color: $red;
+            &:hover {
+                background-image: url(/assets/images/news/flowers-cat.jpg);
+            }
+        }
+        &_style-two {
+            background-color: $turquoise;
+            &:hover {
+                background-image: url(/assets/images/news/computer-cat.jpg);
+            }
+        }
+        &_style-three {
+            background-color: $yellow;
+            &:hover {
+                background-image: url(/assets/images/news/sleepy-cat-2.jpg);
+            }
+        }
+        &:hover {
+            @media (min-width: $tablet) {
+                justify-content: center;
+            }
+            & .news__desc,
+            & .news__post-title,
+            & .news__pic {
+                display: none;
+            }
+            & .news__link {
+                background-color: $red;
+                border-bottom: 0.1rem solid $black;
+                @media (min-width: $tablet) {
+                }
+            }
+        }
+    }
+
+    &__paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    &__post-title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    // .news__desc
+
+    &__desc {
+        max-height: 4rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    // .news__pic
+
+    &__pic {
+        min-width: 35vmin;
+        margin: auto 0;
+        @media (min-width: $tablet) {
+            min-width: 0;
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+
+        transform: none;
+        z-index: 1;
+
+        &:hover {
+            font-size: 1.3rem;
+            text-transform: none;
+        }
+    }
+}

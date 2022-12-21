@@ -50,7 +50,8 @@ img {
     line-height: 1.5rem;
 }
 
-.aside__nav-link {
+.aside__nav-link,
+.styled-link {
     color: $black;
     transition: 1s cubic-bezier(0.215, 0.61, 0.355, 1);
     background-color: transparent;
@@ -61,7 +62,8 @@ img {
     padding: 0.2rem;
 }
 
-.aside__nav-link:hover {
+.aside__nav-link:hover,
+.styled-link:hover {
     opacity: 1;
     transform: none;
     background-color: $red;
@@ -168,7 +170,7 @@ img {
 .panel-details {
     display: flex;
     flex-direction: column;
-    margin-top: -3rem;
+    margin-top: -5rem;
     @media (min-width: $tablet) {
         display: none;
     }
