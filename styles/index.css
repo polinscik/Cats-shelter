@@ -25,6 +25,7 @@
   font-size: 1.5rem;
   align-self: flex-end;
   color: #000;
+  align-self: stretch;
 }
 .gallery__card {
   display: flex;
