@@ -180,7 +180,7 @@
     }
 }
 
-@media (min-width: $tablet) and (max-width: $large-desktop) {
+@media (min-width: $tablet) {
     .gallery {
         flex-direction: row;
         justify-content: center;
