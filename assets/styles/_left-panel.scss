@@ -26,7 +26,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-
     z-index: 3;
 
     &:hover {
@@ -186,4 +185,12 @@ img {
     font-weight: 300;
 }
 
-//.aside__numbers {}
+.panel-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3rem;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
