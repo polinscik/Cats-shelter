@@ -452,11 +452,10 @@ img {
 }
 .header__buttones .header__buttones:hover {
   background-color: rgb(56, 175, 115);
-  text-decoration: none;
   color: white;
   opacity: 1;
   transform: none;
-  font-size: larger;
+  font-size: large;
 }
 .header__buttones .button1 {
   display: flex;
@@ -475,6 +474,10 @@ img {
   flex-shrink: 1;
   border: 2px solid white;
   width: 200px;
+}
+
+.header__number:hover {
+  cursor: pointer;
 }
 
 .banner {
@@ -882,11 +885,12 @@ label {
   }
   .banner #cover {
     margin-top: 8rem;
+    margin-bottom: -8rem;
   }
 }
 @media (min-width: 768px) {
   .header {
-    margin-left: 25%;
+    margin-left: 20%;
   }
 }
 @media (min-width: 1280px) {
