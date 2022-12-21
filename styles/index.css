@@ -1,16 +1,11 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
 .main-page {
   display: flex;
   flex-direction: column;
-}
-@media (min-width: 768px) {
-  .main-page {
-    max-width: 75%;
-  }
-}
-@media (min-width: 1280px) {
-  .main-page {
-    max-width: 80%;
-  }
 }
 
 .gallery__container {
@@ -151,7 +146,7 @@
     padding-left: 5%;
   }
 }
-@media (min-width: 768px) and (max-width: 1560px) {
+@media (min-width: 768px) {
   .gallery {
     flex-direction: row;
     justify-content: center;
@@ -224,11 +219,12 @@ img {
 
 .aside {
   display: none;
-  max-width: 25%;
+  max-width: 20%;
 }
 @media (min-width: 768px) {
   .aside {
     display: block;
+    position: fixed;
   }
 }
 @media (min-width: 1280px) {
@@ -456,11 +452,10 @@ img {
 }
 .header__buttones .header__buttones:hover {
   background-color: rgb(56, 175, 115);
-  text-decoration: none;
   color: white;
   opacity: 1;
   transform: none;
-  font-size: larger;
+  font-size: large;
 }
 .header__buttones .button1 {
   display: flex;
@@ -479,6 +474,10 @@ img {
   flex-shrink: 1;
   border: 2px solid white;
   width: 200px;
+}
+
+.header__number:hover {
+  cursor: pointer;
 }
 
 .banner {
@@ -886,11 +885,12 @@ label {
   }
   .banner #cover {
     margin-top: 8rem;
+    margin-bottom: -8rem;
   }
 }
 @media (min-width: 768px) {
   .header {
-    margin-left: 25%;
+    margin-left: 20%;
   }
 }
 @media (min-width: 1280px) {
