@@ -1,16 +1,11 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
 .main-page {
   display: flex;
   flex-direction: column;
-}
-@media (min-width: 768px) {
-  .main-page {
-    max-width: 75%;
-  }
-}
-@media (min-width: 1280px) {
-  .main-page {
-    max-width: 80%;
-  }
 }
 
 .gallery__container {

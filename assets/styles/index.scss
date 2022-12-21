@@ -1,14 +1,14 @@
 @import "./colors";
 @import "./breakpoints";
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
 .main-page {
     display: flex;
     flex-direction: column;
-    @media (min-width: $tablet) {
-        max-width: 75%;
-    }
-    @media (min-width: $desktop) {
-        max-width: 80%;
-    }
 }
 
 @import "./gallery";
