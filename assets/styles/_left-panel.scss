@@ -27,6 +27,8 @@ img {
     align-items: center;
     justify-content: center;
 
+    z-index: 3;
+
     &:hover {
         background-color: $green;
     }
@@ -163,6 +165,25 @@ img {
     align-items: center;
 }
 
-.aside__numbers {}
+.aside__numbers {
+    background-color: $white;
+    border: 1rem solid $red;
+    min-height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &:hover {
+        border-color: $grey;
+        background-color: $red;
+        color: $white;
+    }
+}
+
+.aside__numbers-text {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+}
 
 //.aside__numbers {}

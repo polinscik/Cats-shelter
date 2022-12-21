@@ -3,7 +3,6 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-
 }
 
 .gallery {
@@ -11,7 +10,7 @@
     flex-direction: row;
 
     max-width: 60%;
-    max-height: 70%;
+    // max-height: 70%;
 
     &__title {
         align-self: center;
@@ -28,6 +27,7 @@
         font-size: 1.5rem;
         align-self: flex-end;
         color: $black;
+        align-self: stretch;
     }
 
     &__card {
@@ -155,7 +155,10 @@
         align-items: center;
 
         max-width: 80%;
-        max-height: 60%;
+        // max-height: 60%;
+        // &__container {
+        //     margin-top: -3rem;
+        // }
     }
 
     .gallery__card {
@@ -175,7 +178,6 @@
         align-self: center;
         padding-left: 5%;
     }
-
 }
 
 @media (min-width: $tablet) and (max-width: $large-desktop) {
@@ -205,4 +207,8 @@
         align-self: center;
         padding-left: 5%;
     }
+}
+
+.gallery__link {
+    margin-top: 2rem;
 }
