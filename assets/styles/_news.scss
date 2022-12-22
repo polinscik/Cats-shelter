@@ -5,6 +5,8 @@
 
     &__title {
         text-align: center;
+        padding-top: 2%;
+        padding-bottom: 1%;
         line-height: 3.5rem;
         border-top: 0.3rem dotted $red;
     }
@@ -15,7 +17,7 @@
         justify-content: stretch;
         gap: 0.6rem;
         transition: none;
-
+        color: $white;
         @media (min-width: $tablet) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -29,13 +31,16 @@
         padding: 0.5rem;
         gap: 0.5rem;
         align-items: center;
-        min-height: 21vh;
+        min-height: 33vh;
         max-width: 100vw;
         background-repeat: no-repeat;
         background-size: cover;
 
         @media (min-width: $tablet) {
             flex-direction: column;
+        }
+        @media (min-width: $desktop) {
+            padding: 1rem;
         }
 
         &_style-one {
@@ -55,7 +60,7 @@
         }
 
         &_style-three {
-            background-color: $yellow;
+            background-color: $blue;
 
             &:hover {
                 background-image: url(/assets/images/news/sleepy-cat-2.jpg);
@@ -77,7 +82,8 @@
                 background-color: $red;
                 border-bottom: 0.1rem solid $black;
 
-                @media (min-width: $tablet) {}
+                @media (min-width: $tablet) {
+                }
             }
         }
     }
@@ -94,6 +100,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
+        margin: 1rem 0;
     }
 
     // .news__desc
@@ -116,16 +123,20 @@
         @media (min-width: $tablet) {
             min-width: 0;
         }
+        @media (min-width: $big-tablet) {
+            max-width: 80%;
+        }
     }
 
     &__link {
         font-weight: 500;
         font-size: 1.1rem;
         padding-top: 0.5rem;
-
+        color: $white;
+        text-transform: none;
         transform: none;
         z-index: 1;
-
+        margin: 1rem 0;
         &:hover {
             font-size: 1.3rem;
             text-transform: none;
