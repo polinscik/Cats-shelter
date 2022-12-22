@@ -1174,6 +1174,58 @@ label {
   text-transform: none;
 }
 
+.news_page {
+  margin-top: 7rem;
+}
+
+.news__posts_page {
+  display: flex;
+}
+
+.news__post_page {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.news__post_page:hover {
+  background-image: unset;
+}
+@media (min-width: 768px) {
+  .news__post_page:hover {
+    justify-content: unset;
+  }
+}
+.news__post_page:hover .news__desc, .news__post_page:hover .news__post-title {
+  display: flex;
+}
+.news__post_page:hover .news__pic {
+  display: block;
+}
+@media (min-width: 768px) {
+  .news__post_page {
+    flex-direction: row;
+  }
+}
+
+.news__desc_page {
+  overflow: initial;
+  display: flex;
+  max-height: unset;
+}
+
+.news__paragraph_page {
+  align-self: stretch;
+}
+
+.news__title_page {
+  border-top: none;
+}
+
+@media (min-width: 768px) {
+  .news__pic_page {
+    max-height: 33vmin;
+  }
+}
+
 .team {
   margin: 1rem;
   margin-top: 135px;
