@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Котокоманда</title>
+        <link
+            rel="icon"
+            href="assets/images/cat-in-the-house.png"
+            type="img/png"
+        />
+        <link rel="stylesheet" href="/styles/normalize.css" />
+        <link rel="stylesheet" href="/styles/index.css" />
+        <link rel="stylesheet" href="/styles/index_cotolog.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="header">
+                    <div class="header__row">
+                        <div class="frame">
+                            <div class="header_phone">
+                                <img
+                                    id="phonecat"
+                                    src="assets/images/catphone.png"
+                                    alt="phone"
+                                />
+                            </div>
+                            <div
+                                onclick="window.location.href = 'tel:+74950000000';"
+                                class="header__number"
+                            >
+                                +7(495) 000 00 00
+                            </div>
+                        </div>
+                        <div class="header__buttones">
+                            <a href="#" class="header__buttones button1">
+                                <p class="btn1">Помочь приюту</p>
+                            </a>
+                            <a
+                                href="index_cotolog.html"
+                                class="header__buttones button2"
+                            >
+                                <p class="btn2">Приютить котика</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--burger menu START-->
+                <div class="menu">
+                    <input type="checkbox" id="burger" />
+                    <label for="burger"
+                        ><span class="burger__accent">Меню</span></label
+                    >
+                    <div class="burger__number">+7(495) 000 00 00</div>
+                    <div class="burger-line first"></div>
+                    <div class="burger-line second"></div>
+                    <div class="burger-line third"></div>
+                    <div class="burger-line fourth"></div>
+                    <nav class="main-menu">
+                        <a class="main-menu__n" href="#"
+                            ><span class="accent-color">О КОТО</span>доме</a
+                        >
+                        <a class="main-menu__n" href="#"
+                            ><span class="accent-color">КОТО</span>лог</a
+                        >
+                        <a class="main-menu__n" href="#"
+                            ><span class="accent-color">КОТО</span>новости</a
+                        >
+                        <a class="main-menu__n" href="./team.html"
+                            ><span class="accent-color">КОТО</span>команда</a
+                        >
+                        <a class="main-menu__n" href="#">Реквизиты</a>
+                    </nav>
+                </div>
+
+                <!--burger menu FINISH-->
+            </header>
+
+            <div class="aside">
+                <a href="#" class="aside__pic">
+                    <div class="aside__pic-img"></div>
+                </a>
+                <div class="aside__nav">
+                    <ul class="aside__nav-items article-text">
+                        <li>
+                            <a class="aside__nav-link" href="#">
+                                <span class="accent-color">О КОТО</span>доме</a
+                            >
+                        </li>
+                        <li>
+                            <a class="aside__nav-link" href="./index_cotolog.html"
+                                ><span class="accent-color">КОТО</span>лог</a
+                            >
+                        </li>
+                        <li>
+                            <a class="aside__nav-link" href="#"
+                                ><span class="accent-color">КОТО</span
+                                >новости</a
+                            >
+                        </li>
+                        <li>
+                            <a class="aside__nav-link" href="./team.html"
+                                ><span class="accent-color">КОТО</span
+                                >команда</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="aside__requisite">
+                    <h3 class="aside__requisite-title small-title">
+                        РЕКВИЗИТЫ
+                    </h3>
+                    <div class="aside__requisite-details">
+                        <a href="#" class="aside__requisite-row">
+                            <img
+                                class="aside__requisite-img aside__requisite-img_sber"
+                                src="/assets/images/icons/sber-logo.svg"
+                                alt="sber"
+                            />
+                            <p class="small-text">
+                                4276&shy;3800&shy;7659&shy;5193
+                            </p>
+                            <p class="small-text">
+                                +7-968-085-72-10 - Ирина Николаевна Н
+                            </p>
+                        </a>
+                        <a href="#" class="aside__requisite-row">
+                            <img
+                                class="aside__requisite-img"
+                                src="/assets/images/icons/tink-logo.svg"
+                                alt="tinkoff"
+                            />
+                            <p class="small-text">
+                                5536&shy;9140&shy;2893&shy;6387 - Станислав
+                                Романович Ц
+                            </p>
+                        </a>
+                        <a href="#" class="aside__requisite-row">
+                            <img
+                                class="aside__requisite-img aside__requisite-img_kiwi"
+                                src="/assets/images/icons/qiwi_logo.svg"
+                                alt="kiwi"
+                            />
+                            <p class="small-text">+7-968-085-72-10</p>
+                        </a>
+                    </div>
+                </div>
+                <a
+                    href="https://t.me/kotodom_shenogina"
+                    class="aside__socials socials"
+                >
+                    <img
+                        class="aside__socials-img"
+                        src="/assets/images/icons/telegram.svg"
+                        alt="telegram"
+                    />
+                    <p class="aside__socials-text article-text">
+                        Узнайте, как еще помочь котикам в нашем Телеграм-канале!
+                    </p>
+                </a>
+                <div class="aside__numbers">
+                    <p class="small-title aside__numbers-text">
+                        спасено 198 кошек
+                    </p>
+                    <p class="small-title aside__numbers-text">
+                        в приюте 91 кошка
+                    </p>
+                </div>
+            </div>
+            <main>
+                <section class="design">
+                    <h2 class="design__title section__title">
+                        <span class="accent-color">КОТО</span>команда
+                    </h2>
+                    <p class="design__info">
+                        Наша миссия состоит в том, чтобы служить людям и
+                        животным, предоставляя безопасный временный приют и
+                        заботу о брошенных и бездомных кошках, а также сокращать
+                        перенаселение домашних животных с помощью стерилизации и
+                        кастрации.
+                    </p>
+                    <div class="designs-container">
+                        <div class="design-item">
+                            <img
+                                src="/assets/images/cat-gallery-photo11.jpg"
+                                alt="design"
+                                class="design__img"
+                            />
+                            <div class="design-item__info">
+                                <p class="design-item__name">
+                                    Ирина Николаевна
+                                </p>
+                                <span class="choose">Директор</span>
+                            </div>
+                        </div>
+                        <div class="design-item">
+                            <img
+                                src="/assets/images/cat-gallery-photo10.jpg"
+                                alt="design"
+                                class="design__img"
+                            />
+                            <div class="design-item__info">
+                                <p class="design-item__name">
+                                    Кристина Анатольевна
+                                </p>
+                                <span class="choose">Котоняня</span>
+                            </div>
+                        </div>
+                        <div class="design-item">
+                            <img
+                                src="/assets/images/cat-gallery-photo14.jpg"
+                                alt="design"
+                                class="design__img"
+                            />
+                            <div class="design-item__info">
+                                <p class="design-item__name">
+                                    Александр Александров
+                                </p>
+                                <span class="choose">Фотограф</span>
+                            </div>
+                        </div>
+
+                        <div class="design-item">
+                            <img
+                                src="/assets/images/cat-gallery-photo11.jpg"
+                                alt="design"
+                                class="design__img"
+                            />
+                            <div class="design-item__info">
+                                <p class="design-item__name">
+                                    Ирина Николаевна
+                                </p>
+                                <span class="choose">Волонтёр</span>
+                            </div>
+                        </div>
+                        <div class="design-item">
+                            <img
+                                src="/assets/images/cat-gallery-photo10.jpg"
+                                alt="design"
+                                class="design__img"
+                            />
+                            <div class="design-item__info">
+                                <p class="design-item__name">
+                                    Кристина Анатольевна
+                                </p>
+                                <span class="choose">Фельдшер</span>
+                            </div>
+                        </div>
+                        <div class="design-item">
+                            <img
+                                src="/assets/images/cat-gallery-photo14.jpg"
+                                alt="design"
+                                class="design__img"
+                            />
+                            <div class="design-item__info">
+                                <p class="design-item__name">
+                                    Александр Александров
+                                </p>
+                                <span class="choose">Редактор</span>
+                            </div>
+                        </div>
+
+                        <div class="design-item">
+                            <img
+                                src="/assets/images/cat-gallery-photo11.jpg"
+                                alt="design"
+                                class="design__img"
+                            />
+                            <div class="design-item__info">
+                                <p class="design-item__name">
+                                    Ирина Николаевна
+                                </p>
+                                <span class="choose">Котоняня</span>
+                            </div>
+                        </div>
+                        <div class="design-item">
+                            <img
+                                src="/assets/images/cat-gallery-photo10.jpg"
+                                alt="design"
+                                class="design__img"
+                            />
+                            <div class="design-item__info">
+                                <p class="design-item__name">
+                                    Кристина Анатольевна
+                                </p>
+                                <span class="choose">Котоняня</span>
+                            </div>
+                        </div>
+                        <div class="design-item">
+                            <img
+                                src="/assets/images/cat-gallery-photo14.jpg"
+                                alt="design"
+                                class="design__img"
+                            />
+                            <div class="design-item__info">
+                                <p class="design-item__name">
+                                    Александр Александров
+                                </p>
+                                <span class="choose">Волонтёр</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
