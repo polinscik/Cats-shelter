@@ -27,12 +27,16 @@
   max-width: 60%;
 }
 .gallery__title {
-  align-self: center;
+  align-self: stretch;
+  text-align: center;
+  line-height: 3.5rem;
   margin-top: 2%;
-  margin-bottom: 5%;
+  padding-top: 2%;
+  margin-bottom: 2%;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
+  border-top: 0.3rem dotted rgb(235, 90, 59);
 }
 .gallery__link {
   font-family: "Nunito", sans-serif;
@@ -238,6 +242,13 @@ img {
     max-width: 20%;
   }
 }
+@media (min-width: 1560px) {
+  .aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
 
 .aside__pic {
   display: flex;
@@ -403,6 +414,12 @@ img {
   display: flex;
   flex-direction: column;
   margin-top: -3rem;
+}
+@media (min-width: 420px) {
+  .panel-details {
+    max-width: 70vw;
+    align-self: center;
+  }
 }
 @media (min-width: 768px) {
   .panel-details {
@@ -803,6 +820,7 @@ label {
   }
   .banner__cover {
     margin-top: 5.6rem;
+    margin-bottom: 2rem;
   }
   .banner__covertext {
     padding-top: 4rem;
@@ -915,8 +933,11 @@ label {
     margin-top: 0;
   }
   .banner #cover {
-    margin-top: 7.2rem;
+    margin-top: -1rem;
     margin-bottom: -7.2rem;
+  }
+  .banner__covertext {
+    padding-top: 11rem;
   }
 }
 @media (min-width: 768px) {
@@ -953,6 +974,8 @@ label {
   margin-top: 2%;
   font-weight: 400;
   font-size: 1.5rem;
+  padding-top: 2%;
+  border-top: 0.3rem dotted rgb(235, 90, 59);
 }
 
 .about {
@@ -1031,6 +1054,8 @@ label {
 }
 .news__title {
   text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%;
   line-height: 3.5rem;
   border-top: 0.3rem dotted rgb(235, 90, 59);
 }
@@ -1040,6 +1065,7 @@ label {
   justify-content: stretch;
   gap: 0.6rem;
   transition: none;
+  color: #fff;
 }
 @media (min-width: 768px) {
   .news__posts {
@@ -1053,7 +1079,7 @@ label {
   padding: 0.5rem;
   gap: 0.5rem;
   align-items: center;
-  min-height: 21vh;
+  min-height: 33vh;
   max-width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1061,6 +1087,11 @@ label {
 @media (min-width: 768px) {
   .news__post {
     flex-direction: column;
+  }
+}
+@media (min-width: 1280px) {
+  .news__post {
+    padding: 1rem;
   }
 }
 .news__post_style-one {
@@ -1076,7 +1107,7 @@ label {
   background-image: url(/assets/images/news/computer-cat.jpg);
 }
 .news__post_style-three {
-  background-color: rgb(247, 217, 64);
+  background-color: rgb(17, 77, 88);
 }
 .news__post_style-three:hover {
   background-image: url(/assets/images/news/sleepy-cat-2.jpg);
@@ -1104,6 +1135,7 @@ label {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  margin: 1rem 0;
 }
 .news__desc {
   max-height: 4rem;
@@ -1122,12 +1154,20 @@ label {
     min-width: 0;
   }
 }
+@media (min-width: 1024px) {
+  .news__pic {
+    max-width: 80%;
+  }
+}
 .news__link {
   font-weight: 500;
   font-size: 1.1rem;
   padding-top: 0.5rem;
+  color: #fff;
+  text-transform: none;
   transform: none;
   z-index: 1;
+  margin: 1rem 0;
 }
 .news__link:hover {
   font-size: 1.3rem;

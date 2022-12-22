@@ -20,6 +20,11 @@ img {
     @media (min-width: $desktop) {
         max-width: 20%;
     }
+    @media (min-width: $large-desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 .aside__pic {
@@ -114,13 +119,15 @@ img {
     color: $white;
 
     &:hover {
-        filter: invert(49%) sepia(19%) saturate(2230%) hue-rotate(324deg) brightness(92%) contrast(100%);
+        filter: invert(49%) sepia(19%) saturate(2230%) hue-rotate(324deg)
+            brightness(92%) contrast(100%);
     }
 }
 
 .aside__requisite-img {
     max-width: 70%;
-    filter: invert(100%) sepia(13%) saturate(4911%) hue-rotate(279deg) brightness(119%) contrast(100%);
+    filter: invert(100%) sepia(13%) saturate(4911%) hue-rotate(279deg)
+        brightness(119%) contrast(100%);
 
     @media (min-width: $desktop) {
         max-width: 60%;
@@ -194,15 +201,18 @@ img {
 .panel-details {
     display: flex;
     flex-direction: column;
-    margin-top: -3rem;
 
+    margin-top: -3rem;
+    @media (min-width: 420px) {
+        max-width: 70vw;
+        align-self: center;
+    }
     @media (min-width: $tablet) {
         display: none;
     }
 }
 
 @media (min-width: $tablet) and (max-width: $big-tablet) {
-
     .aside__requisite,
     .socials {
         display: none;
