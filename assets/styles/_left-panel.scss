@@ -23,30 +23,30 @@ img {
 }
 
 .aside__pic {
-    background-color: $red;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 3;
 
     &:hover {
-        background-color: $green;
+        cursor: pointer;
     }
 }
 
 .aside__pic-img {
-    background-image: url(/assets/images/cat-gray.png);
+    background-image: url(/assets/images/cat-on-the-bench.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
-    height: 150px;
+    height: 110px;
     padding: 1rem 0;
 }
 
 .aside__nav {
     background-color: $white;
     padding: 1rem;
-    min-width: max-content;
+    padding-bottom: 0;
+    // min-width: max-content;
 }
 
 .aside__nav-items {
@@ -65,6 +65,7 @@ img {
     align-items: center;
     opacity: 1;
     transform: scale3d(0.85, 0.85, 1) translateX(-23px);
+    text-transform: uppercase;
     padding: 0.2rem;
 }
 
@@ -74,7 +75,6 @@ img {
     transform: none;
     background-color: $red;
     font-size: larger;
-
     text-transform: uppercase;
 
     .accent-color {
@@ -87,6 +87,7 @@ img {
 }
 
 .aside__requisite {
+    margin: 1rem;
     padding: 1rem;
     background-color: $green;
     color: $white;
@@ -164,6 +165,7 @@ img {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
+    margin: 1rem;
     align-items: center;
 }
 
@@ -171,6 +173,7 @@ img {
     background-color: $white;
     border: 1rem solid $red;
     min-height: 6rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -194,6 +197,14 @@ img {
     margin-top: -3rem;
 
     @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+@media (min-width: $tablet) and (max-width: $big-tablet) {
+
+    .aside__requisite,
+    .socials {
         display: none;
     }
 }
