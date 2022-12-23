@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
 
-    max-width: 60%;
+    // max-width: 60%;
     // max-height: 70%;
 
     &__title {
@@ -216,12 +216,18 @@
     margin-top: 2rem;
 }
 
+
+
 @media (min-width: 1800px) {
     .gallery__img {
         max-width: 100%;
     }
 
     .gallery {
-        max-width: 80%;
+        max-width: 65%;
     }
+}
+
+.gallery__main {
+    max-width: 100%;
 }
