@@ -1269,11 +1269,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-height: 2.3rem;
+  max-height: 2.5rem;
   font-family: "Nunito", sans-serif;
   font-size: 2.5vmin;
   margin: 10px 0;
-  padding: 20px 0 10px;
+  padding: 20px 0 25px;
 }
 
 .footer-phone {
@@ -1292,7 +1292,7 @@ body {
 
 .footer-text {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .container-footer a {
@@ -1328,7 +1328,7 @@ body {
   grid-template-columns: 1fr 70%;
   justify-content: center;
   max-width: 100%;
-  max-height: 24rem;
+  max-height: 30rem;
   font-family: "Nunito", sans-serif;
   font-size: 2.5vmin;
   margin-top: 10px;
@@ -1352,7 +1352,6 @@ body {
   align-items: stretch;
   justify-self: center;
   max-width: 100%;
-  margin-top: 3rem;
 }
 
 .footer-contacts__text {
@@ -1360,7 +1359,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding: 0 0 0 1rem;
-  margin-top: 1rem;
 }
 
 .contacts__telegram {
