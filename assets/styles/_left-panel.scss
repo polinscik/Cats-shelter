@@ -20,6 +20,7 @@ img {
     @media (min-width: $desktop) {
         max-width: 20%;
     }
+
     @media (min-width: $large-desktop) {
         display: flex;
         flex-direction: column;
@@ -119,15 +120,13 @@ img {
     color: $white;
 
     &:hover {
-        filter: invert(49%) sepia(19%) saturate(2230%) hue-rotate(324deg)
-            brightness(92%) contrast(100%);
+        filter: invert(49%) sepia(19%) saturate(2230%) hue-rotate(324deg) brightness(92%) contrast(100%);
     }
 }
 
 .aside__requisite-img {
     max-width: 70%;
-    filter: invert(100%) sepia(13%) saturate(4911%) hue-rotate(279deg)
-        brightness(119%) contrast(100%);
+    filter: invert(100%) sepia(13%) saturate(4911%) hue-rotate(279deg) brightness(119%) contrast(100%);
 
     @media (min-width: $desktop) {
         max-width: 60%;
@@ -176,43 +175,26 @@ img {
     align-items: center;
 }
 
-.aside__numbers {
-    background-color: $white;
-    border: 1rem solid $red;
-    min-height: 6rem;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 
-    &:hover {
-        border-color: $grey;
-        background-color: $red;
-        color: $white;
-    }
-}
-
-.aside__numbers-text {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 300;
-}
 
 .panel-details {
     display: flex;
     flex-direction: column;
 
     margin-top: -3rem;
+
     @media (min-width: 420px) {
         max-width: 70vw;
         align-self: center;
     }
+
     @media (min-width: $tablet) {
         display: none;
     }
 }
 
 @media (min-width: $tablet) and (max-width: $big-tablet) {
+
     .aside__requisite,
     .socials {
         display: none;

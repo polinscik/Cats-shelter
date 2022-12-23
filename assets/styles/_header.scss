@@ -256,24 +256,24 @@ label {
     }
 }
 
-#burger:checked ~ .main-menu {
+#burger:checked~.main-menu {
     max-height: 500px;
     font-size: 16px;
 }
 
-#burger:checked ~ .first {
+#burger:checked~.first {
     display: none;
 }
 
-#burger:checked ~ .second {
+#burger:checked~.second {
     transform: rotate(45deg);
 }
 
-#burger:checked ~ .third {
+#burger:checked~.third {
     transform: rotate(-45deg);
 }
 
-#burger:checked ~ .fourth {
+#burger:checked~.fourth {
     display: none;
 }
 
@@ -594,6 +594,7 @@ label {
             margin-top: -1rem;
             margin-bottom: -7.2rem;
         }
+
         &__covertext {
             padding-top: 11rem;
         }
