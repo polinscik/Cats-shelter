@@ -1503,7 +1503,7 @@ body .container .card .box .content a:hover {
 .gallery__cotolog {
   display: flex;
   justify-content: center;
-  max-width: 70%;
+  max-width: 65%;
 }
 
 body {
