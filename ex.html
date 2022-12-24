@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Send Mail</title>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script type="text/javascript">
+            function sendEmail() {
+                Email.send({
+                    SecureToken: "A209FEE438EC3F479D8698921FD978B1C7D3",
+                    To: "loker28@mail.ru",
+                    From: "jaro42@mail.com",
+                    Subject: "This is the subject",
+                    Body: "And this is the body",
+                }).then((message) => alert(message));
+            }
+        </script>
+    </head>
+
+    <body>
+        <form action="https://formsubmit.co/jdjdj8034@gmail.com" method="POST">
+            <input type="text" name="name" required />
+            <input type="email" name="email" required />
+            <button type="submit">Send</button>
+        </form>
+    </body>
+</html>
