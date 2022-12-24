@@ -1,5 +1,31 @@
 @import "./colors";
 @import "./breakpoints";
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: $mobile) and (max-width: 767.98px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+@import "./gallery";
 @import "./text-types";
 @import "./left-panel";
 @import "./header";
+@import "./about";
+@import "./news";
+@import "./team";
+@import "./help";
+@import "./cotolog";
+@import "./footer";
+@import "./help";

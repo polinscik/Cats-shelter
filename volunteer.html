@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Стать волонтёром</title>
+        <link
+            rel="icon"
+            href="assets/images/cat-in-the-house.png"
+            type="img/png"
+        />
+        <link rel="stylesheet" href="/styles/normalize.css" />
+        <link rel="stylesheet" href="/styles/volunteer.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <main>
+            <section class="questionary">
+                <h2 class="questionary__title">Волонтёрская заявка</h2>
+                <form>
+                    <div class="form-section">
+                        <h3>Личные данные</h3>
+                        <div class="form-row">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-row">
+                            <p class="age">Ваш возраст:</p>
+                            <select>
+                                <option value="first option">До 21 года</option>
+                                <option value="second option">21-29 лет</option>
+                                <option value="third option">30-39 лет</option>
+                                <option value="fourth option">40-49 лет</option>
+                                <option value="fifth option">50-69 лет</option>
+                                <option value="sixth option">60-69 лет</option>
+                                <option value="seventh option">
+                                    70-74 года
+                                </option>
+                                <option value="eight option">75+</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Ваш email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </div>
+                        <div class="form-row">
+                            <label for="phone">Ваш телефон:</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h3>Опыт работы с животными</h3>
+                        <div class="form-row">
+                            <label for="experience"
+                                >У вас есть опыт работы с животными? Если да,
+                                опишите</label
+                            >
+                            <textarea
+                                id="experience"
+                                name="experience"
+                                rows="5"
+                                cols="20"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h3>О себе</h3>
+                        <div class="form-row">
+                            <label for="about"
+                                >Расскажите немного о себе:</label
+                            >
+                            <textarea id="about" name="about"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h3>Дополнительная информация</h3>
+                        <div class="form-row">
+                            <label for="availability"
+                                >Когда вы можете приступить к работе?</label
+                            >
+                            <input
+                                type="text"
+                                id="availability"
+                                name="availability"
+                            />
+                        </div>
+                    </div>
+                    <div class="form__button">
+                        <button class="btn" type="submit">
+                            Отправить заявку
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

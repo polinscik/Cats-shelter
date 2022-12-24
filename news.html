@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kотоновости</title>
+        <link
+            rel="icon"
+            href="assets/images/cat-in-the-house.png"
+            type="img/png"
+        />
+        <link rel="stylesheet" href="/styles/normalize.css" />
+        <link rel="stylesheet" href="/styles/index.css" />
+        <link rel="stylesheet" href="/styles/index_cotolog.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="header">
+                    <div class="header__row">
+                        <div class="frame">
+                            <div class="header_phone">
+                                <img
+                                    id="phonecat"
+                                    src="assets/images/catphone.png"
+                                    alt="phone"
+                                />
+                            </div>
+                            <div
+                                onclick="window.location.href = 'tel:+74950000000';"
+                                class="header__number"
+                            >
+                                +7(495) 000 00 00
+                            </div>
+                        </div>
+                        <div class="header__buttones">
+                            <a
+                                href="./help.html"
+                                class="header__buttones button1"
+                            >
+                                <p class="btn1">Помочь приюту</p>
+                            </a>
+                            <a
+                                href="index_cotolog.html"
+                                class="header__buttones button2"
+                            >
+                                <p class="btn2">Приютить котика</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--burger menu START-->
+                <div class="menu">
+                    <input type="checkbox" id="burger" />
+                    <label for="burger"
+                        ><span class="burger__accent">Меню</span></label
+                    >
+                    <div class="burger__number">+7(495) 000 00 00</div>
+                    <div class="burger-line first"></div>
+                    <div class="burger-line second"></div>
+                    <div class="burger-line third"></div>
+                    <div class="burger-line fourth"></div>
+                    <nav class="main-menu">
+                        <a class="main-menu__n" href="./index.html#about-us"
+                            ><span class="accent-color">О КОТО</span>доме</a
+                        >
+                        <a class="main-menu__n" href="./index_cotolog.html"
+                            ><span class="accent-color">КОТО</span>лог</a
+                        >
+                        <a class="main-menu__n" href="./news.html"
+                            ><span class="accent-color">КОТО</span>новости</a
+                        >
+                        <a class="main-menu__n" href="./team.html"
+                            ><span class="accent-color">КОТО</span>команда</a
+                        >
+                        <a class="main-menu__n" href="./index.html#requisites"
+                            >Реквизиты</a
+                        >
+                    </nav>
+                </div>
+
+                <!--burger menu FINISH-->
+            </header>
+
+            <div class="aside">
+                <a href="#" class="aside__pic">
+                    <div class="aside__pic-img"></div>
+                </a>
+                <div class="aside__nav">
+                    <ul class="aside__nav-items article-text">
+                        <li>
+                            <a
+                                class="aside__nav-link"
+                                href="./index.html#about-us"
+                            >
+                                <span class="accent-color">О КОТО</span>доме</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="aside__nav-link aside__nav-link_2"
+                                href="./index_cotolog.html"
+                                ><span class="accent-color">КОТО</span>лог</a
+                            >
+                        </li>
+                        <li>
+                            <a class="aside__nav-link" href="./news.html"
+                                ><span class="accent-color">КОТО</span
+                                >новости</a
+                            >
+                        </li>
+                        <li>
+                            <a class="aside__nav-link" href="./team.html"
+                                ><span class="accent-color">КОТО</span
+                                >команда</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="aside__requisite">
+                    <h3 class="aside__requisite-title small-title">
+                        РЕКВИЗИТЫ
+                    </h3>
+                    <div class="aside__requisite-details">
+                        <a
+                            target="_blank"
+                            href="https://online.sberbank.ru"
+                            class="aside__requisite-row"
+                        >
+                            <img
+                                class="aside__requisite-img aside__requisite-img_sber"
+                                src="/assets/images/icons/sber-logo.svg"
+                                alt="sber"
+                            />
+                            <p class="small-text">
+                                4276&shy;3800&shy;7659&shy;5193
+                            </p>
+                            <p class="small-text">
+                                +7-968-085-72-10 - Ирина Николаевна Н
+                            </p>
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://www.tinkoff.ru/"
+                            class="aside__requisite-row"
+                        >
+                            <img
+                                class="aside__requisite-img"
+                                src="/assets/images/icons/tink-logo.svg"
+                                alt="tinkoff"
+                            />
+                            <p class="small-text">
+                                5536&shy;9140&shy;2893&shy;6387 - Станислав
+                                Романович Ц
+                            </p>
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://qiwi.com/"
+                            class="aside__requisite-row"
+                        >
+                            <img
+                                class="aside__requisite-img aside__requisite-img_kiwi"
+                                src="/assets/images/icons/qiwi_logo.svg"
+                                alt="kiwi"
+                            />
+                            <p class="small-text">+7-968-085-72-10</p>
+                        </a>
+                    </div>
+                </div>
+                <a
+                    href="https://t.me/kotodom_shenogina"
+                    class="aside__socials socials"
+                >
+                    <img
+                        class="aside__socials-img"
+                        src="/assets/images/icons/telegram.svg"
+                        alt="telegram"
+                    />
+                    <p class="aside__socials-text article-text">
+                        Узнайте, как еще помочь котикам в нашем Телеграм-канале!
+                    </p>
+                </a>
+            </div>
+            <main>
+                <div class="main-page">
+                    <section class="news news_page">
+                        <h2 class="news__title news__title_page subtitle">
+                            <span class="accent-color">КОТО</span>новости
+                        </h2>
+                        <div class="news__posts news__posts_page">
+                            <div
+                                class="news__post news__post_style-one news__post_page"
+                            >
+                                <div
+                                    class="news__paragraph news__paragraph_page"
+                                >
+                                    <h3 class="small-title news__post-title">
+                                        Aliquam at purus cursus, auctor dolor
+                                    </h3>
+                                    <p
+                                        class="article-text news__desc news__desc_page"
+                                    >
+                                        Duis ipsum nisl, convallis a tincidunt
+                                        ac, lobortis dapibus libero. Maecenas
+                                        dapibus aliquet felis. Donec erat nisl,
+                                        malesuada non elit.Duis ipsum nisl,
+                                        convallis a tincidunt ac, lobortis
+                                        dapibus libero. Maecenas dapibus aliquet
+                                        felis. Donec erat nisl, malesuada non
+                                        elit.Duis ipsum nisl, convallis a
+                                        tincidunt ac, lobortis dapibus libero.
+                                        Maecenas dapibus aliquet felis. Donec
+                                        erat nisl, malesuada non elit.Duis ipsum
+                                        nisl, convallis a tincidunt ac, lobortis
+                                        dapibus libero. Maecenas dapibus aliquet
+                                        felis. Donec erat nisl, malesuada non
+                                        elit.
+                                    </p>
+                                </div>
+                                <div class="news__pic">
+                                    <img
+                                        class="news__pic_page"
+                                        src="/assets/images/news/news-pic-1.jpg"
+                                        alt="flowers-cat"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="news__post news__post_style-two news__post_page"
+                            >
+                                <div
+                                    class="news__paragraph news__paragraph_page"
+                                >
+                                    <h3 class="small-title news__post-title">
+                                        Cras accumsan porttitor nisl, semper
+                                    </h3>
+                                    <p
+                                        class="article-text news__desc news__desc_page"
+                                    >
+                                        Fusce tincidunt elementum posuere. In
+                                        faucibus ut leo vel porttitor. Aliquam
+                                        in odio cursus, dignissim sem ac,
+                                        imperdiet nunc. Ut euismod orci.
+                                    </p>
+                                </div>
+                                <div class="news__pic">
+                                    <img
+                                        class="news__pic_page"
+                                        src="/assets/images/news/news-pic-2.jpg"
+                                        alt="computer-cat"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="news__post news__post_style-three news__post_page"
+                            >
+                                <div
+                                    class="news__paragraph news__paragraph_page"
+                                >
+                                    <h3 class="small-title news__post-title">
+                                        Sed mi urna, condimentum
+                                    </h3>
+                                    <p
+                                        class="article-text news__desc news__desc_page"
+                                    >
+                                        Praesent ut odio eget magna dapibus
+                                        imperdiet vel vel lectus. Fusce varius
+                                        sapien sit amet elit consequat luctus.
+                                        Curabitur ac lobortis.
+                                    </p>
+                                </div>
+                                <div class="news__pic">
+                                    <img
+                                        class="news__pic_page"
+                                        src="/assets/images/news/news-pic-3.jpg"
+                                        alt="sleepy-cat"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
