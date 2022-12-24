@@ -34,4 +34,7 @@ body {
 .small-text {
     font-weight: 600;
     font-size: 0.8rem;
+    @media (min-width: $large-desktop) {
+        font-size: 1rem;
+    }
 }
