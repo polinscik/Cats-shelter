@@ -764,17 +764,19 @@ label {
   .banner__cover {
     margin-top: 0rem;
     justify-content: center;
+    margin-top: 5rem;
+    width: 100%;
   }
   .banner #cover {
-    margin-top: 12.7rem;
-    flex-shrink: 0;
+    margin-top: 7rem;
+    flex-shrink: 1;
     max-height: 100%;
   }
   .banner__covertext {
     align-content: flex-start;
     display: flex;
     width: 100%;
-    top: 6.5rem;
+    top: 5.5rem;
     padding-top: 0;
     padding-left: 1rem;
   }
@@ -785,35 +787,6 @@ label {
   .banner #nameing2 {
     font-size: 3vw;
     font-weight: 600;
-  }
-  .banner .button1 {
-    width: 180px;
-    padding: 0.4rem;
-  }
-  .banner .button2 {
-    width: 180px;
-    padding: 0.4rem;
-  }
-  .banner__cover {
-    margin-top: 5rem;
-    width: 100%;
-  }
-  .banner #cover {
-    margin-top: 4rem;
-    flex-shrink: 1;
-    max-height: 100%;
-  }
-  .banner__covertext {
-    align-content: flex-start;
-    display: flex;
-    width: 90%;
-    padding-top: 0;
-  }
-  .banner #nameing {
-    font-size: 4vw;
-  }
-  .banner #nameing2 {
-    font-size: 2.5vw;
   }
   .panel-details {
     margin-top: -0.5rem;

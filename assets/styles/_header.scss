@@ -286,7 +286,6 @@ label {
       display: none;
     }
   }
-
   .menu {
     position: absolute;
     width: 100%;
@@ -304,10 +303,8 @@ label {
     .frame {
       display: none;
     }
-  }
-  .banner {
-    &__cover {
-      margin-top: 5rem;
+    &__row {
+      display: flex;
       width: 100%;
       margin-top: 2.7rem;
     }
@@ -317,7 +314,7 @@ label {
       max-width: 100%;
       padding: 1rem;
       gap: 1rem;
-      font-size: 1rem;
+      font-size: 0.7rem;
       justify-items: center;
       flex-direction: column;
       flex-wrap: wrap;
@@ -330,23 +327,22 @@ label {
     &__cover {
       margin-top: 0rem;
       justify-content: center;
+      margin-top: 5rem;
+      width: 100%;
     }
-
     #cover {
-      margin-top: 12.7rem;
-      flex-shrink: 0;
+      margin-top: 7rem;
+      flex-shrink: 1;
       max-height: 100%;
     }
-
     &__covertext {
       align-content: flex-start;
       display: flex;
       width: 100%;
-      top: 6.5rem;
+      top: 5.5rem;
       padding-top: 0;
       padding-left: 1rem;
     }
-
     #nameing {
       font-size: 4.5vw;
       font-weight: 800;
@@ -355,37 +351,6 @@ label {
     #nameing2 {
       font-size: 3vw;
       font-weight: 600;
-    }
-    .button1 {
-      width: 180px;
-      padding: 0.4rem;
-    }
-    .button2 {
-      width: 180px;
-      padding: 0.4rem;
-    }
-  }
-  .banner {
-    &__cover {
-      margin-top: 5rem;
-      width: 100%;
-    }
-    #cover {
-      margin-top: 4rem;
-      flex-shrink: 1;
-      max-height: 100%;
-    }
-    &__covertext {
-      align-content: flex-start;
-      display: flex;
-      width: 90%;
-      padding-top: 0;
-    }
-    #nameing {
-      font-size: 4vw;
-    }
-    #nameing2 {
-      font-size: 2.5vw;
     }
   }
   .panel-details {
