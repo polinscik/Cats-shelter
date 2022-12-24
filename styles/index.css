@@ -62,8 +62,7 @@
   max-height: 80%;
   border-radius: 50%;
   margin-bottom: 5%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .gallery__cards_one_photo_cat__hover {
   display: none;
@@ -355,7 +354,6 @@ img {
 
 .aside__requisite {
   margin: 1rem;
-  border-radius: 50px 0;
   padding: 1rem;
   background-color: rgb(56, 175, 115);
   color: #fff;
@@ -407,14 +405,20 @@ img {
 
 .aside__socials {
   padding: 1rem;
-  background-color: rgb(27, 155, 163);
+  background-image: linear-gradient(-20deg, rgb(17, 77, 88) 51%, rgb(27, 155, 163) 51%);
 }
 .aside__socials-text {
   color: #fff;
   display: block;
 }
 .aside__socials:hover {
-  background-color: rgb(17, 77, 88);
+  background-image: linear-gradient(127deg, rgb(192, 205, 57) 51%, rgb(235, 90, 59) 51%);
+}
+.aside__socials:hover .aside__socials-text {
+  color: #000;
+}
+.aside__socials:hover .aside__socials-img {
+  filter: invert(100%);
 }
 
 .socials {
@@ -1456,8 +1460,8 @@ body .container .card .box .content h3 {
 }
 
 body .container .card .box .content p {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
   z-index: 1;
   transition: 0.5s;

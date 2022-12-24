@@ -104,7 +104,6 @@ img {
 
 .aside__requisite {
     margin: 1rem;
-    border-radius: 50px 0;
     padding: 1rem;
     background-color: $green;
     color: $white;
@@ -160,7 +159,7 @@ img {
 
 .aside__socials {
     padding: 1rem;
-    background-color: $turquoise;
+    background-image: linear-gradient(-20deg, $blue 51%, $turquoise 51%);
 
     &-text {
         color: $white;
@@ -168,7 +167,15 @@ img {
     }
 
     &:hover {
-        background-color: $blue;
+        background-image: linear-gradient(127deg, $light-green 51%, $red 51%);
+
+        .aside__socials-text {
+            color: $black;
+        }
+
+        .aside__socials-img {
+            filter: invert(100%);
+        }
     }
 }
 
