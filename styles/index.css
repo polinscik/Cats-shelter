@@ -19,11 +19,13 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
+  max-width: 95%;
 }
 
 .gallery {
   display: flex;
   flex-direction: row;
+  max-width: 60%;
 }
 .gallery__title {
   align-self: stretch;
@@ -60,6 +62,8 @@
   max-height: 80%;
   border-radius: 50%;
   margin-bottom: 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .gallery__cards_one_photo_cat__hover {
   display: none;
@@ -140,6 +144,12 @@
     align-items: center;
     max-width: 80%;
   }
+  .gallery__cotolog {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+  }
   .gallery__card {
     flex-direction: column;
     background-color: #fff;
@@ -163,6 +173,13 @@
     max-width: 100%;
     max-height: 70%;
   }
+  .gallery__cotolog {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 70%;
+  }
   .gallery__card {
     flex-direction: column;
     background-color: #fff;
@@ -170,7 +187,7 @@
     max-height: 80%;
   }
   .gallery__cards_text {
-    font-size: 1.3rem;
+    font-size: 1rem;
     max-height: 40%;
   }
   .gallery__link {
@@ -180,6 +197,8 @@
 }
 .gallery__link {
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 
 @media (min-width: 1800px) {
@@ -1357,6 +1376,141 @@ label {
     font-size: 25px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.help {
+  margin-top: 185px;
+  text-align: center;
+}
+
+.help__img {
+  position: relative;
+  width: 40%;
+}
+
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+body .container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+body .container .card:nth-child(1) .box .content a {
+  background: rgb(27, 155, 163);
+}
+
+body .container .card:nth-child(2) .box .content a {
+  background: rgb(235, 90, 59);
+}
+
+body .container .card:nth-child(3) .box .content a {
+  background: rgb(17, 77, 88);
+}
+
+body .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: rgb(56, 175, 115);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+body .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+body .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+body .container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  body .container .card .box .content a {
+    font-size: 20px;
+  }
+  .container__title {
+    font-size: 4rem;
+  }
+}
+.gallery__container_cotolog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__cotolog {
+  display: flex;
+  justify-content: center;
+  max-width: 70%;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
