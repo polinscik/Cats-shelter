@@ -776,12 +776,12 @@ label {
     align-content: flex-start;
     display: flex;
     width: 100%;
-    top: 5.5rem;
+    top: 8rem;
     padding-top: 0;
     padding-left: 1rem;
   }
   .banner #nameing {
-    font-size: 4.5vw;
+    font-size: 4.2vw;
     font-weight: 800;
   }
   .banner #nameing2 {
@@ -865,7 +865,7 @@ label {
     margin-top: 6.3rem;
   }
   .banner__covertext {
-    padding-top: 4rem;
+    padding-top: 4.5rem;
     align-content: center;
     justify-content: center;
   }
@@ -941,7 +941,7 @@ label {
     margin-top: 2.5rem;
   }
   .banner__covertext {
-    padding-top: 1rem;
+    padding-top: 1.6rem;
     flex-shrink: 1;
     justify-content: center;
   }
@@ -965,7 +965,7 @@ label {
     margin-top: 1rem;
   }
   .banner__covertext {
-    padding-top: 4.5rem;
+    padding-top: 5rem;
   }
   .banner #cover {
     margin-top: 8rem;
