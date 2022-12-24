@@ -101,6 +101,9 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         margin: 1rem 0;
+        @media (min-width: $large-desktop) {
+            font-size: 1.5rem;
+        }
     }
 
     // .news__desc
@@ -112,6 +115,9 @@
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        @media (min-width: $large-desktop) {
+            font-size: 1.25rem;
+        }
     }
 
     // .news__pic
@@ -146,6 +152,11 @@
 
 .news_page {
     margin-top: 7rem;
+
+    @media (min-width: $large-desktop) {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
 }
 .news__posts_page {
     display: flex;
