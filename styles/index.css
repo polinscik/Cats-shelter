@@ -19,6 +19,7 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
+  max-width: 95%;
 }
 
 .gallery {
@@ -61,6 +62,8 @@
   max-height: 80%;
   border-radius: 50%;
   margin-bottom: 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .gallery__cards_one_photo_cat__hover {
   display: none;
@@ -141,6 +144,12 @@
     align-items: center;
     max-width: 80%;
   }
+  .gallery__cotolog {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+  }
   .gallery__card {
     flex-direction: column;
     background-color: #fff;
@@ -164,6 +173,13 @@
     max-width: 100%;
     max-height: 70%;
   }
+  .gallery__cotolog {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 70%;
+  }
   .gallery__card {
     flex-direction: column;
     background-color: #fff;
@@ -181,6 +197,8 @@
 }
 .gallery__link {
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
 }
 
 body {
@@ -384,7 +402,8 @@ img {
 .socials {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   margin: 1rem;
   align-items: center;
 }
@@ -1439,4 +1458,15 @@ body .container .card .box .content a:hover {
   .container__title {
     font-size: 4rem;
   }
+}
+.gallery__container_cotolog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__cotolog {
+  display: flex;
+  justify-content: center;
+  max-width: 70%;
 }

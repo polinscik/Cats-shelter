@@ -1,0 +1,26 @@
+.gallery__container_cotolog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__cotolog {
+  display: flex;
+  justify-content: center;
+  max-width: 70%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
