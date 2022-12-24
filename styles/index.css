@@ -738,7 +738,7 @@ label {
     align-content: flex-start;
     display: flex;
     width: 100%;
-    top: 8.5rem;
+    top: 6.5rem;
     padding-top: 0;
     padding-left: 1rem;
   }
@@ -798,6 +798,9 @@ label {
   .banner #nameing2 {
     font-size: 2vw;
   }
+  .panel-details {
+    margin-top: -0.5rem;
+  }
 }
 @media (min-width: 320px) and (max-width: 520px) {
   .menu .burger__number {
@@ -821,7 +824,15 @@ label {
     margin-top: 1.2rem;
   }
   .banner #cover {
-    margin-block: 6rem;
+    margin-top: 6.3rem;
+  }
+  .banner__covertext {
+    padding-top: 4rem;
+    align-content: center;
+    justify-content: center;
+  }
+  .panel-details {
+    margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 521px) and (max-width: 767.98px) {
@@ -834,12 +845,12 @@ label {
     margin-bottom: 2rem;
   }
   .banner__covertext {
-    padding-top: 4rem;
+    padding-top: 1rem;
     align-content: center;
     justify-content: center;
   }
   .banner #cover {
-    margin-block: 2rem;
+    margin-top: 2.5rem;
   }
   .banner #cover #nameing {
     font-size: 3.5vw;
@@ -889,10 +900,10 @@ label {
     margin-top: 5rem;
   }
   .banner #cover {
-    margin-block: 2rem;
+    margin-top: 2.5rem;
   }
   .banner__covertext {
-    padding-top: 6rem;
+    padding-top: 1rem;
     flex-shrink: 1;
     justify-content: center;
   }
@@ -916,10 +927,10 @@ label {
     margin-top: 1rem;
   }
   .banner__covertext {
-    padding-top: 14rem;
+    padding-top: 4.5rem;
   }
   .banner #cover {
-    margin-top: 7rem;
+    margin-top: 8rem;
   }
 }
 @media (min-width: 1281px) {
@@ -944,11 +955,11 @@ label {
     margin-top: 0;
   }
   .banner #cover {
-    margin-top: -1rem;
+    margin-top: 8rem;
     margin-bottom: -7.2rem;
   }
   .banner__covertext {
-    padding-top: 11rem;
+    padding-top: 7rem;
   }
 }
 @media (min-width: 768px) {
@@ -1034,7 +1045,6 @@ label {
   .mission__title {
     font-size: 40px;
     line-height: 40px;
-    padding-top: 35px;
   }
   .mission__desc,
 .about__text {
