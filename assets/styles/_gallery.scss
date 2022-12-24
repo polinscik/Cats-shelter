@@ -3,14 +3,14 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
+    max-width: 95%;
+
 }
 
 .gallery {
     display: flex;
     flex-direction: row;
-
-    // max-width: 60%;
-    // max-height: 70%;
+    max-width: 60%;
 
     &__title {
         align-self: stretch;
@@ -52,6 +52,7 @@
         max-height: 80%;
         border-radius: 50%;
         margin-bottom: 5%;
+        object-fit: cover;
     }
 
     //1 карточка
@@ -165,6 +166,14 @@
         // }
     }
 
+    .gallery__cotolog {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 80%;
+    }
+
     .gallery__card {
         flex-direction: column;
         background-color: #fff;
@@ -193,6 +202,14 @@
         max-height: 70%;
     }
 
+    .gallery__cotolog {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        max-height: 70%;
+    }
+
     .gallery__card {
         flex-direction: column;
         background-color: #fff;
@@ -202,7 +219,7 @@
     }
 
     .gallery__cards_text {
-        font-size: 1.3rem;
+        font-size: 1rem;
         max-height: 40%;
     }
 
@@ -214,6 +231,8 @@
 
 .gallery__link {
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 
 
