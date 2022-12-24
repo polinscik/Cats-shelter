@@ -50,8 +50,8 @@ img {
 
 .aside__nav {
     background-color: $white;
-    padding: 1rem;
-    padding-bottom: 0;
+    margin: 1rem;
+    margin-bottom: 0;
     // min-width: max-content;
 }
 
@@ -62,6 +62,10 @@ img {
     line-height: 1.5rem;
 }
 
+.aside__nav-link {
+    font-size: 1.25rem;
+}
+
 .aside__nav-link,
 .styled-link {
     color: $black;
@@ -69,10 +73,12 @@ img {
     background-color: transparent;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     opacity: 1;
     transform: scale3d(0.85, 0.85, 1) translateX(-23px);
     text-transform: uppercase;
     padding: 0.2rem;
+    width: fit-content;
 }
 
 .aside__nav-link:hover,
@@ -86,6 +92,10 @@ img {
     .accent-color {
         color: $white;
     }
+}
+
+.aside__nav-link_2 {
+    padding-left: 0.4rem;
 }
 
 .accent-color {
@@ -121,13 +131,15 @@ img {
     color: $white;
 
     &:hover {
-        filter: invert(49%) sepia(19%) saturate(2230%) hue-rotate(324deg) brightness(92%) contrast(100%);
+        filter: invert(49%) sepia(19%) saturate(2230%) hue-rotate(324deg)
+            brightness(92%) contrast(100%);
     }
 }
 
 .aside__requisite-img {
     max-width: 70%;
-    filter: invert(100%) sepia(13%) saturate(4911%) hue-rotate(279deg) brightness(119%) contrast(100%);
+    filter: invert(100%) sepia(13%) saturate(4911%) hue-rotate(279deg)
+        brightness(119%) contrast(100%);
 
     @media (min-width: $desktop) {
         max-width: 60%;
@@ -168,8 +180,6 @@ img {
     align-items: center;
 }
 
-
-
 .panel-details {
     display: flex;
     flex-direction: column;
@@ -187,7 +197,6 @@ img {
 }
 
 @media (min-width: $tablet) and (max-width: $big-tablet) {
-
     .aside__requisite,
     .socials {
         display: none;
