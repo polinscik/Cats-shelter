@@ -319,7 +319,7 @@ img {
 .aside__nav-link,
 .styled-link {
   color: #000;
-  transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
   background-color: transparent;
   display: flex;
   align-items: center;
