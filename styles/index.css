@@ -62,8 +62,7 @@
   max-height: 80%;
   border-radius: 50%;
   margin-bottom: 5%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .gallery__cards_one_photo_cat__hover {
   display: none;
@@ -209,10 +208,6 @@
     max-width: 65%;
   }
 }
-.gallery__main {
-  max-width: 100%;
-}
-
 body {
   font-family: "Nunito", sans-serif;
   font-size: 2.5vmin;
@@ -324,7 +319,7 @@ img {
 .aside__nav-link,
 .styled-link {
   color: #000;
-  transition: 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -333,9 +328,6 @@ img {
   transform: scale3d(0.85, 0.85, 1) translateX(-23px);
   text-transform: uppercase;
   padding: 0.2rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .aside__nav-link:hover,
@@ -349,10 +341,6 @@ img {
 .aside__nav-link:hover .accent-color,
 .styled-link:hover .accent-color {
   color: #fff;
-}
-
-.aside__nav-link_2 {
-  padding-left: 0.4rem;
 }
 
 .accent-color {
@@ -431,8 +419,7 @@ img {
 .socials {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   margin: 1rem;
   align-items: center;
 }
@@ -1398,7 +1385,7 @@ label {
 }
 
 .help {
-  margin-top: 185px;
+  margin-top: 165px;
   text-align: center;
 }
 
@@ -1412,7 +1399,7 @@ body .container {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 40px 0;
+  margin: 15px 0;
 }
 
 body .container .card {
@@ -1480,8 +1467,8 @@ body .container .card .box .content h3 {
 }
 
 body .container .card .box .content p {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
   z-index: 1;
   transition: 0.5s;
@@ -1511,7 +1498,8 @@ body .container .card .box .content a:hover {
     font-size: 20px;
   }
   .container__title {
-    font-size: 4rem;
+    font-size: 2.4rem;
+    margin: 0 20px;
   }
 }
 .gallery__container_cotolog {
@@ -1523,7 +1511,7 @@ body .container .card .box .content a:hover {
 .gallery__cotolog {
   display: flex;
   justify-content: center;
-  max-width: 70%;
+  max-width: 65%;
 }
 
 body {
@@ -1699,7 +1687,7 @@ body {
 }
 
 .help {
-  margin-top: 185px;
+  margin-top: 165px;
   text-align: center;
 }
 
@@ -1713,7 +1701,7 @@ body .container {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 40px 0;
+  margin: 15px 0;
 }
 
 body .container .card {
@@ -1781,8 +1769,8 @@ body .container .card .box .content h3 {
 }
 
 body .container .card .box .content p {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
   z-index: 1;
   transition: 0.5s;
@@ -1812,6 +1800,7 @@ body .container .card .box .content a:hover {
     font-size: 20px;
   }
   .container__title {
-    font-size: 4rem;
+    font-size: 2.4rem;
+    margin: 0 20px;
   }
 }
