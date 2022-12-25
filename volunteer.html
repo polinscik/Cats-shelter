@@ -10,6 +10,7 @@
             href="assets/images/cat-in-the-house.png"
             type="img/png"
         />
+        <script src="http://pure.github.io/pure/libs/pure.js"></script>
         <link rel="stylesheet" href="/styles/normalize.css" />
         <link rel="stylesheet" href="/styles/volunteer.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +25,7 @@
         <main>
             <section class="questionary">
                 <h2 class="questionary__title">Волонтёрская заявка</h2>
-                <form>
+                <form id="form">
                     <div class="form-section">
                         <h3>Личные данные</h3>
                         <div class="form-row">
@@ -32,35 +33,24 @@
                             <input type="text" id="name" name="name" required />
                         </div>
                         <div class="form-row">
-                            <p class="age">Ваш возраст:</p>
-                            <select>
-                                <option value="first option">До 21 года</option>
-                                <option value="second option">21-29 лет</option>
-                                <option value="third option">30-39 лет</option>
-                                <option value="fourth option">40-49 лет</option>
-                                <option value="fifth option">50-69 лет</option>
-                                <option value="sixth option">60-69 лет</option>
-                                <option value="seventh option">
-                                    70-74 года
-                                </option>
-                                <option value="eight option">75+</option>
-                            </select>
+                            <label for="age">Ваш возраст:</label>
+                            <input type="age" id="age" name="age" required />
                         </div>
                         <div class="form-row">
-                            <label for="email">Ваш email:</label>
+                            <label for="from_name">Ваш email:</label>
                             <input
-                                type="email"
-                                id="email"
-                                name="email"
+                                type="text"
+                                id="from_name"
+                                name="from_name"
                                 required
                             />
                         </div>
                         <div class="form-row">
-                            <label for="phone">Ваш телефон:</label>
+                            <label for="numbers">Ваш телефон:</label>
                             <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
+                                type="text"
+                                id="numbers"
+                                name="numbers"
                                 required
                             />
                         </div>
@@ -68,13 +58,13 @@
                     <div class="form-section">
                         <h3>Опыт работы с животными</h3>
                         <div class="form-row">
-                            <label for="experience"
+                            <label for="experiencewithanimals"
                                 >У вас есть опыт работы с животными? Если да,
                                 опишите</label
                             >
                             <textarea
-                                id="experience"
-                                name="experience"
+                                id="experiencewithanimals"
+                                name="experiencewithanimals"
                                 rows="5"
                                 cols="20"
                             ></textarea>
@@ -83,32 +73,83 @@
                     <div class="form-section">
                         <h3>О себе</h3>
                         <div class="form-row">
-                            <label for="about"
+                            <label for="aboutmyself"
                                 >Расскажите немного о себе:</label
                             >
-                            <textarea id="about" name="about"></textarea>
+                            <textarea
+                                id="aboutmyself"
+                                name="aboutmyself"
+                            ></textarea>
                         </div>
                     </div>
                     <div class="form-section">
                         <h3>Дополнительная информация</h3>
                         <div class="form-row">
-                            <label for="availability"
+                            <label for="timetowork"
                                 >Когда вы можете приступить к работе?</label
                             >
                             <input
                                 type="text"
-                                id="availability"
-                                name="availability"
+                                id="timetowork"
+                                name="timetowork"
                             />
                         </div>
                     </div>
                     <div class="form__button">
-                        <button class="btn" type="submit">
+                        <button class="btn" id="button" type="submit">
                             Отправить заявку
                         </button>
                     </div>
                 </form>
             </section>
+            <div style="visibility: hidden" class="field">
+                <label for="to_name">to_name</label>
+                <input
+                    type="text"
+                    value="some@mail.ru"
+                    name="to_name"
+                    id="to_name"
+                />
+            </div>
         </main>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+
+        <script type="text/javascript">
+            //  document.getElementById("message").innerText = "New text!";
+            emailjs.init("S-jfWd-gviiRka8Vt");
+
+            const btn = document.getElementById("button");
+
+            document
+                .getElementById("form")
+
+                .addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    btn.value = "Sending...";
+
+                    const serviceID = "service_g9yv82r";
+                    const templateID = "template_4jyua62";
+
+                    emailjs
+                        .sendForm(serviceID, templateID, this)
+
+                        .then(
+                            () => {
+                                // let messageMain = document.getElementById("message");
+                                //     messageMain=messageMain+"11111";
+                                btn.value = "Send Email";
+                                alert("Sent!");
+                            },
+                            (err) => {
+                                btn.value = "Send Email";
+                                alert(JSON.stringify(err));
+                            }
+                        );
+                });
+        </script>
     </body>
 </html>
